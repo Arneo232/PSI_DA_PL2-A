@@ -14,6 +14,10 @@ namespace ProjetoDA
         [STAThread]
         static void Main()
         {
+            using (var db = new CantinaContext())
+            {
+                var lst = db.Clientes.ToList();
+            } 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
