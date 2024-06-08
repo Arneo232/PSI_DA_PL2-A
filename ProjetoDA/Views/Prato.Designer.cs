@@ -29,128 +29,146 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dtgPrato = new System.Windows.Forms.DataGridView();
+            this.btnAdicionarP = new System.Windows.Forms.Button();
+            this.txtPrato = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.BtnApagar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cbTipoPrato = new System.Windows.Forms.ComboBox();
+            this.btnEditarP = new System.Windows.Forms.Button();
+            this.BtnApagarP = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPrato)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(201, 7);
+            this.label1.Location = new System.Drawing.Point(234, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Gestão dos Pratos";
             // 
-            // dataGridView1
+            // dtgPrato
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(206, 55);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(386, 301);
-            this.dataGridView1.TabIndex = 1;
+            this.dtgPrato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgPrato.Location = new System.Drawing.Point(240, 68);
+            this.dtgPrato.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgPrato.Name = "dtgPrato";
+            this.dtgPrato.RowHeadersWidth = 51;
+            this.dtgPrato.RowTemplate.Height = 24;
+            this.dtgPrato.Size = new System.Drawing.Size(450, 370);
+            this.dtgPrato.TabIndex = 1;
             // 
-            // button1
+            // btnAdicionarP
             // 
-            this.button1.Location = new System.Drawing.Point(136, 115);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 24);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Adicionar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdicionarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdicionarP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAdicionarP.FlatAppearance.BorderSize = 2;
+            this.btnAdicionarP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAdicionarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAdicionarP.Location = new System.Drawing.Point(96, 142);
+            this.btnAdicionarP.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdicionarP.Name = "btnAdicionarP";
+            this.btnAdicionarP.Size = new System.Drawing.Size(70, 30);
+            this.btnAdicionarP.TabIndex = 2;
+            this.btnAdicionarP.Text = "Adicionar";
+            this.btnAdicionarP.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtPrato
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 55);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(114, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtPrato.Location = new System.Drawing.Point(96, 68);
+            this.txtPrato.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPrato.Name = "txtPrato";
+            this.txtPrato.Size = new System.Drawing.Size(132, 22);
+            this.txtPrato.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 58);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.label2.Location = new System.Drawing.Point(2, 71);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Nome do prato:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 84);
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.label3.Location = new System.Drawing.Point(57, 103);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.Size = new System.Drawing.Size(31, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Tipo:";
             // 
-            // comboBox1
+            // cbTipoPrato
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbTipoPrato.FormattingEnabled = true;
+            this.cbTipoPrato.Items.AddRange(new object[] {
             "Carne",
             "Peixe",
             "Vegan"});
-            this.comboBox1.Location = new System.Drawing.Point(82, 82);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(114, 21);
-            this.comboBox1.TabIndex = 6;
+            this.cbTipoPrato.Location = new System.Drawing.Point(96, 101);
+            this.cbTipoPrato.Margin = new System.Windows.Forms.Padding(2);
+            this.cbTipoPrato.Name = "cbTipoPrato";
+            this.cbTipoPrato.Size = new System.Drawing.Size(132, 24);
+            this.cbTipoPrato.TabIndex = 6;
             // 
-            // button2
+            // btnEditarP
             // 
-            this.button2.Location = new System.Drawing.Point(82, 115);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 24);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEditarP.BackColor = System.Drawing.Color.Gold;
+            this.btnEditarP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEditarP.FlatAppearance.BorderSize = 2;
+            this.btnEditarP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnEditarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnEditarP.Location = new System.Drawing.Point(170, 142);
+            this.btnEditarP.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditarP.Name = "btnEditarP";
+            this.btnEditarP.Size = new System.Drawing.Size(58, 30);
+            this.btnEditarP.TabIndex = 7;
+            this.btnEditarP.Text = "Editar";
+            this.btnEditarP.UseVisualStyleBackColor = false;
             // 
-            // BtnApagar
+            // BtnApagarP
             // 
-            this.BtnApagar.Location = new System.Drawing.Point(82, 143);
-            this.BtnApagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BtnApagar.Name = "BtnApagar";
-            this.BtnApagar.Size = new System.Drawing.Size(114, 22);
-            this.BtnApagar.TabIndex = 8;
-            this.BtnApagar.Text = "Apagar";
-            this.BtnApagar.UseVisualStyleBackColor = true;
+            this.BtnApagarP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnApagarP.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnApagarP.FlatAppearance.BorderSize = 2;
+            this.BtnApagarP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
+            this.BtnApagarP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.IndianRed;
+            this.BtnApagarP.Location = new System.Drawing.Point(96, 176);
+            this.BtnApagarP.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnApagarP.Name = "BtnApagarP";
+            this.BtnApagarP.Size = new System.Drawing.Size(133, 27);
+            this.BtnApagarP.TabIndex = 8;
+            this.BtnApagarP.Text = "Apagar";
+            this.BtnApagarP.UseVisualStyleBackColor = false;
             // 
             // Prato
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.BtnApagar);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(700, 450);
+            this.Controls.Add(this.BtnApagarP);
+            this.Controls.Add(this.btnEditarP);
+            this.Controls.Add(this.cbTipoPrato);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtPrato);
+            this.Controls.Add(this.btnAdicionarP);
+            this.Controls.Add(this.dtgPrato);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Prato";
-            this.Text = "Prato";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Gestão dos Pratos";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPrato)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,13 +177,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dtgPrato;
+        private System.Windows.Forms.Button btnAdicionarP;
+        private System.Windows.Forms.TextBox txtPrato;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button BtnApagar;
+        private System.Windows.Forms.ComboBox cbTipoPrato;
+        private System.Windows.Forms.Button btnEditarP;
+        private System.Windows.Forms.Button BtnApagarP;
     }
 }

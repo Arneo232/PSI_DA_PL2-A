@@ -105,6 +105,9 @@
     <EmbeddedResource Include="Views\Prato.resx">
       <DependentUpon>Prato.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reserva.resx">
+      <DependentUpon>Reserva.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
