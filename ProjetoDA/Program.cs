@@ -21,7 +21,7 @@ namespace ProjetoDA
             } 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Prato());
+            Application.Run(new Form1());
         }
     }
 }
