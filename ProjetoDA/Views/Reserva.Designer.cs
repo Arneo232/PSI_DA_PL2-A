@@ -38,8 +38,10 @@
             this.txtRefeicoes = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCliente = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,12 +49,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(393, 11);
+            this.dataGridView1.Location = new System.Drawing.Point(393, 86);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(450, 457);
+            this.dataGridView1.Size = new System.Drawing.Size(450, 382);
             this.dataGridView1.TabIndex = 2;
             // 
             // label2
@@ -147,6 +149,41 @@
             this.txtCliente.Size = new System.Drawing.Size(126, 22);
             this.txtCliente.TabIndex = 13;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Location = new System.Drawing.Point(94, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(179, 24);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Gestão do Cliente";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.No;
+            this.btnPesquisar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPesquisar.FlatAppearance.BorderSize = 2;
+            this.btnPesquisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnPesquisar.Location = new System.Drawing.Point(585, 49);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.TabIndex = 28;
+            this.btnPesquisar.Text = "Buscar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            // 
+            // txtPesquisa
+            // 
+            this.txtPesquisa.Location = new System.Drawing.Point(393, 49);
+            this.txtPesquisa.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(187, 22);
+            this.txtPesquisa.TabIndex = 27;
+            this.txtPesquisa.Text = "Pesquisa";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::ProjetoDA.Properties.Resources.Logo2;
@@ -157,24 +194,14 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(94, 11);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 24);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Gestão do Cliente";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // Reserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(854, 479);
+            this.Controls.Add(this.btnPesquisar);
+            this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtCliente);
@@ -188,7 +215,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Reserva";
             this.Text = "Gestão do Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -212,5 +239,7 @@
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.TextBox txtPesquisa;
     }
 }
