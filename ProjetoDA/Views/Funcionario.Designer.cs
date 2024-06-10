@@ -41,8 +41,16 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.TSM = new System.Windows.Forms.MenuStrip();
+            this.TSM_GestaoC = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_GestaoP = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_GestaoM = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dtgFuncionario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.TSM.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnApagarF
@@ -200,11 +208,70 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Visible = false;
             // 
+            // TSM
+            // 
+            this.TSM.Dock = System.Windows.Forms.DockStyle.None;
+            this.TSM.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSM_GestaoC,
+            this.TSM_GestaoP,
+            this.TSM_GestaoM,
+            this.TSM_GestaoF,
+            this.TSM_GestaoMulta,
+            this.TSM_Registo});
+            this.TSM.Location = new System.Drawing.Point(45, 36);
+            this.TSM.Name = "TSM";
+            this.TSM.Size = new System.Drawing.Size(673, 24);
+            this.TSM.TabIndex = 30;
+            this.TSM.Text = "TSM Tabs";
+            // 
+            // TSM_GestaoC
+            // 
+            this.TSM_GestaoC.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoC.Name = "TSM_GestaoC";
+            this.TSM_GestaoC.Size = new System.Drawing.Size(102, 20);
+            this.TSM_GestaoC.Text = "Gestâo do Cliente";
+            // 
+            // TSM_GestaoP
+            // 
+            this.TSM_GestaoP.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoP.Name = "TSM_GestaoP";
+            this.TSM_GestaoP.Size = new System.Drawing.Size(105, 20);
+            this.TSM_GestaoP.Text = "Gestão dos Pratos";
+            // 
+            // TSM_GestaoM
+            // 
+            this.TSM_GestaoM.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoM.Name = "TSM_GestaoM";
+            this.TSM_GestaoM.Size = new System.Drawing.Size(100, 20);
+            this.TSM_GestaoM.Text = " Gestão do Menu";
+            // 
+            // TSM_GestaoF
+            // 
+            this.TSM_GestaoF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoF.Name = "TSM_GestaoF";
+            this.TSM_GestaoF.Size = new System.Drawing.Size(106, 20);
+            this.TSM_GestaoF.Text = "Gestão de Faturas";
+            // 
+            // TSM_GestaoMulta
+            // 
+            this.TSM_GestaoMulta.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoMulta.Name = "TSM_GestaoMulta";
+            this.TSM_GestaoMulta.Size = new System.Drawing.Size(100, 20);
+            this.TSM_GestaoMulta.Text = "Gestão de Multas";
+            // 
+            // TSM_Registo
+            // 
+            this.TSM_Registo.Name = "TSM_Registo";
+            this.TSM_Registo.Size = new System.Drawing.Size(152, 20);
+            this.TSM_Registo.Text = "Registo de Funcionário";
+            // 
             // Funcionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 554);
+            this.Controls.Add(this.TSM);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtEmail);
@@ -219,12 +286,14 @@
             this.Controls.Add(this.dtgFuncionario);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Funcionario";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "Gestão de Funcionarios";
             ((System.ComponentModel.ISupportInitialize)(this.dtgFuncionario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.TSM.ResumeLayout(false);
+            this.TSM.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +314,12 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.MenuStrip TSM;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoC;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoP;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoM;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
+        private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
     }
 }
