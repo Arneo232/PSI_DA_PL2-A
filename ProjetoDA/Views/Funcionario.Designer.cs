@@ -219,9 +219,9 @@
             this.TSM_GestaoF,
             this.TSM_GestaoMulta,
             this.TSM_Registo});
-            this.TSM.Location = new System.Drawing.Point(45, 36);
+            this.TSM.Location = new System.Drawing.Point(58, 36);
             this.TSM.Name = "TSM";
-            this.TSM.Size = new System.Drawing.Size(673, 24);
+            this.TSM.Size = new System.Drawing.Size(793, 24);
             this.TSM.TabIndex = 30;
             this.TSM.Text = "TSM Tabs";
             // 

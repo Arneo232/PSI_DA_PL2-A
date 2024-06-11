@@ -44,8 +44,16 @@
             this.dtgCMulta = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.btnPagar = new System.Windows.Forms.Button();
+            this.TSM = new System.Windows.Forms.MenuStrip();
+            this.TSM_GestaoC = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_GestaoP = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_GestaoM = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMultas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCMulta)).BeginInit();
+            this.TSM.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnPesquisar
@@ -55,7 +63,7 @@
             this.btnPesquisar.FlatAppearance.BorderSize = 2;
             this.btnPesquisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnPesquisar.Location = new System.Drawing.Point(461, 136);
+            this.btnPesquisar.Location = new System.Drawing.Point(460, 214);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisar.TabIndex = 40;
@@ -64,7 +72,7 @@
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(269, 136);
+            this.txtPesquisa.Location = new System.Drawing.Point(268, 214);
             this.txtPesquisa.Margin = new System.Windows.Forms.Padding(2);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(187, 22);
@@ -75,7 +83,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(347, 16);
+            this.label5.Location = new System.Drawing.Point(353, 10);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(198, 26);
@@ -85,7 +93,7 @@
             // dtgMultas
             // 
             this.dtgMultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgMultas.Location = new System.Drawing.Point(556, 263);
+            this.dtgMultas.Location = new System.Drawing.Point(554, 324);
             this.dtgMultas.Margin = new System.Windows.Forms.Padding(2);
             this.dtgMultas.Name = "dtgMultas";
             this.dtgMultas.RowHeadersWidth = 51;
@@ -96,13 +104,13 @@
             // mCalendar
             // 
             this.mCalendar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mCalendar.Location = new System.Drawing.Point(12, 8);
+            this.mCalendar.Location = new System.Drawing.Point(10, 75);
             this.mCalendar.Name = "mCalendar";
             this.mCalendar.TabIndex = 36;
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(556, 108);
+            this.txtDescricao.Location = new System.Drawing.Point(554, 169);
             this.txtDescricao.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(350, 22);
@@ -112,7 +120,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label4.Location = new System.Drawing.Point(556, 90);
+            this.label4.Location = new System.Drawing.Point(554, 151);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 16);
@@ -121,15 +129,15 @@
             // 
             // txtValorTotal
             // 
-            this.txtValorTotal.Location = new System.Drawing.Point(556, 519);
+            this.txtValorTotal.Location = new System.Drawing.Point(554, 580);
             this.txtValorTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtValorTotal.Name = "txtValorTotal";
-            this.txtValorTotal.Size = new System.Drawing.Size(231, 22);
+            this.txtValorTotal.Size = new System.Drawing.Size(276, 22);
             this.txtValorTotal.TabIndex = 33;
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(556, 214);
+            this.txtCliente.Location = new System.Drawing.Point(554, 275);
             this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(350, 22);
@@ -139,7 +147,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label3.Location = new System.Drawing.Point(556, 196);
+            this.label3.Location = new System.Drawing.Point(554, 257);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
@@ -148,7 +156,7 @@
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(556, 160);
+            this.txtData.Location = new System.Drawing.Point(554, 221);
             this.txtData.Margin = new System.Windows.Forms.Padding(2);
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(350, 22);
@@ -158,7 +166,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label1.Location = new System.Drawing.Point(556, 501);
+            this.label1.Location = new System.Drawing.Point(554, 562);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 16);
@@ -169,7 +177,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label2.Location = new System.Drawing.Point(556, 142);
+            this.label2.Location = new System.Drawing.Point(554, 203);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 16);
@@ -179,7 +187,7 @@
             // dtgCMulta
             // 
             this.dtgCMulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgCMulta.Location = new System.Drawing.Point(12, 181);
+            this.dtgCMulta.Location = new System.Drawing.Point(10, 242);
             this.dtgCMulta.Margin = new System.Windows.Forms.Padding(2);
             this.dtgCMulta.Name = "dtgCMulta";
             this.dtgCMulta.RowHeadersWidth = 51;
@@ -191,7 +199,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label6.Location = new System.Drawing.Point(556, 245);
+            this.label6.Location = new System.Drawing.Point(554, 306);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 16);
@@ -205,7 +213,7 @@
             this.btnPagar.FlatAppearance.BorderSize = 2;
             this.btnPagar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnPagar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnPagar.Location = new System.Drawing.Point(808, 515);
+            this.btnPagar.Location = new System.Drawing.Point(834, 576);
             this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar.Name = "btnPagar";
             this.btnPagar.Size = new System.Drawing.Size(70, 30);
@@ -213,11 +221,70 @@
             this.btnPagar.Text = "Pagar";
             this.btnPagar.UseVisualStyleBackColor = false;
             // 
+            // TSM
+            // 
+            this.TSM.Dock = System.Windows.Forms.DockStyle.None;
+            this.TSM.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSM_GestaoC,
+            this.TSM_GestaoP,
+            this.TSM_GestaoM,
+            this.TSM_GestaoF,
+            this.TSM_GestaoMulta,
+            this.TSM_Registo});
+            this.TSM.Location = new System.Drawing.Point(113, 42);
+            this.TSM.Name = "TSM";
+            this.TSM.Size = new System.Drawing.Size(673, 24);
+            this.TSM.TabIndex = 43;
+            this.TSM.Text = "TSM Tabs";
+            // 
+            // TSM_GestaoC
+            // 
+            this.TSM_GestaoC.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoC.Name = "TSM_GestaoC";
+            this.TSM_GestaoC.Size = new System.Drawing.Size(102, 20);
+            this.TSM_GestaoC.Text = "Gestâo do Cliente";
+            // 
+            // TSM_GestaoP
+            // 
+            this.TSM_GestaoP.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoP.Name = "TSM_GestaoP";
+            this.TSM_GestaoP.Size = new System.Drawing.Size(105, 20);
+            this.TSM_GestaoP.Text = "Gestão dos Pratos";
+            // 
+            // TSM_GestaoM
+            // 
+            this.TSM_GestaoM.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoM.Name = "TSM_GestaoM";
+            this.TSM_GestaoM.Size = new System.Drawing.Size(100, 20);
+            this.TSM_GestaoM.Text = " Gestão do Menu";
+            // 
+            // TSM_GestaoF
+            // 
+            this.TSM_GestaoF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoF.Name = "TSM_GestaoF";
+            this.TSM_GestaoF.Size = new System.Drawing.Size(106, 20);
+            this.TSM_GestaoF.Text = "Gestão de Faturas";
+            // 
+            // TSM_GestaoMulta
+            // 
+            this.TSM_GestaoMulta.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoMulta.Name = "TSM_GestaoMulta";
+            this.TSM_GestaoMulta.Size = new System.Drawing.Size(100, 20);
+            this.TSM_GestaoMulta.Text = "Gestão de Multas";
+            // 
+            // TSM_Registo
+            // 
+            this.TSM_Registo.Name = "TSM_Registo";
+            this.TSM_Registo.Size = new System.Drawing.Size(152, 20);
+            this.TSM_Registo.Text = "Registo de Funcionário";
+            // 
             // Multa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 553);
+            this.ClientSize = new System.Drawing.Size(913, 612);
+            this.Controls.Add(this.TSM);
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnPesquisar);
@@ -235,12 +302,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dtgCMulta);
             this.Font = new System.Drawing.Font("Arial", 9.75F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Multa";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "Gestão de Multas";
             ((System.ComponentModel.ISupportInitialize)(this.dtgMultas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCMulta)).EndInit();
+            this.TSM.ResumeLayout(false);
+            this.TSM.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,5 +333,12 @@
         private System.Windows.Forms.DataGridView dtgCMulta;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnPagar;
+        private System.Windows.Forms.MenuStrip TSM;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoC;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoP;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoM;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
+        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
+        private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
     }
 }
