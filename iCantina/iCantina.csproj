@@ -83,12 +83,6 @@
     <Compile Include="Views\FormPrato.Designer.cs">
       <DependentUpon>FormPrato.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Formteste1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Formteste1.Designer.cs">
-      <DependentUpon>Formteste1.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
