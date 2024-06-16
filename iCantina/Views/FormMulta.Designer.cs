@@ -1,6 +1,6 @@
 ﻿namespace iCantina.Views
 {
-    partial class FormReserva
+    partial class FormMulta
     {
         /// <summary>
         /// Required designer variable.
@@ -35,23 +35,25 @@
             this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPagar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.dtgMultas = new System.Windows.Forms.DataGridView();
+            this.mCalendar = new System.Windows.Forms.MonthCalendar();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtRefeicoes = new System.Windows.Forms.TextBox();
-            this.btnDepositar = new System.Windows.Forms.Button();
-            this.txtCSaldo = new System.Windows.Forms.TextBox();
+            this.txtValorTotal = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtSaldo = new System.Windows.Forms.TextBox();
+            this.txtData = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtgReserva = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dtgCMulta = new System.Windows.Forms.DataGridView();
             this.TSM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgReserva)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgMultas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCMulta)).BeginInit();
             this.SuspendLayout();
             // 
             // TSM
@@ -65,10 +67,10 @@
             this.TSM_GestaoF,
             this.TSM_GestaoMulta,
             this.TSM_Registo});
-            this.TSM.Location = new System.Drawing.Point(108, 34);
+            this.TSM.Location = new System.Drawing.Point(115, 37);
             this.TSM.Name = "TSM";
             this.TSM.Size = new System.Drawing.Size(673, 24);
-            this.TSM.TabIndex = 47;
+            this.TSM.TabIndex = 60;
             this.TSM.Text = "TSM Tabs";
             // 
             // TSM_GestaoC
@@ -112,6 +114,32 @@
             this.TSM_Registo.Size = new System.Drawing.Size(152, 20);
             this.TSM_Registo.Text = "Registo de Funcionário";
             // 
+            // btnPagar
+            // 
+            this.btnPagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnPagar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnPagar.FlatAppearance.BorderSize = 2;
+            this.btnPagar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnPagar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnPagar.Location = new System.Drawing.Point(836, 571);
+            this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPagar.Name = "btnPagar";
+            this.btnPagar.Size = new System.Drawing.Size(70, 30);
+            this.btnPagar.TabIndex = 59;
+            this.btnPagar.Text = "Pagar";
+            this.btnPagar.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.label6.Location = new System.Drawing.Point(556, 301);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 16);
+            this.label6.TabIndex = 58;
+            this.label6.Text = "Multas:";
+            // 
             // btnPesquisar
             // 
             this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.No;
@@ -119,177 +147,170 @@
             this.btnPesquisar.FlatAppearance.BorderSize = 2;
             this.btnPesquisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnPesquisar.Location = new System.Drawing.Point(615, 110);
+            this.btnPesquisar.Location = new System.Drawing.Point(462, 209);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
-            this.btnPesquisar.TabIndex = 46;
+            this.btnPesquisar.TabIndex = 57;
             this.btnPesquisar.Text = "Buscar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(423, 110);
+            this.txtPesquisa.Location = new System.Drawing.Point(270, 209);
             this.txtPesquisa.Margin = new System.Windows.Forms.Padding(2);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(187, 23);
-            this.txtPesquisa.TabIndex = 45;
+            this.txtPesquisa.TabIndex = 56;
             this.txtPesquisa.Text = "Pesquisa";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold);
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(360, 10);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(350, 10);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 24);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "Gestão do Cliente";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Size = new System.Drawing.Size(198, 26);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Gestão de Multas";
             // 
-            // txtCliente
+            // dtgMultas
             // 
-            this.txtCliente.Location = new System.Drawing.Point(151, 111);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(126, 23);
-            this.txtCliente.TabIndex = 42;
+            this.dtgMultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgMultas.Location = new System.Drawing.Point(556, 319);
+            this.dtgMultas.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgMultas.Name = "dtgMultas";
+            this.dtgMultas.RowHeadersWidth = 51;
+            this.dtgMultas.RowTemplate.Height = 24;
+            this.dtgMultas.Size = new System.Drawing.Size(350, 227);
+            this.dtgMultas.TabIndex = 54;
+            // 
+            // mCalendar
+            // 
+            this.mCalendar.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mCalendar.Location = new System.Drawing.Point(12, 70);
+            this.mCalendar.Name = "mCalendar";
+            this.mCalendar.TabIndex = 53;
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Location = new System.Drawing.Point(556, 164);
+            this.txtDescricao.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(350, 23);
+            this.txtDescricao.TabIndex = 52;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label4.Location = new System.Drawing.Point(108, 117);
+            this.label4.Location = new System.Drawing.Point(556, 146);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 16);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Cliente";
+            this.label4.Size = new System.Drawing.Size(57, 16);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Descrição:";
             // 
-            // txtRefeicoes
+            // txtValorTotal
             // 
-            this.txtRefeicoes.Location = new System.Drawing.Point(151, 224);
-            this.txtRefeicoes.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRefeicoes.Name = "txtRefeicoes";
-            this.txtRefeicoes.Size = new System.Drawing.Size(126, 23);
-            this.txtRefeicoes.TabIndex = 40;
+            this.txtValorTotal.Location = new System.Drawing.Point(556, 575);
+            this.txtValorTotal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtValorTotal.Name = "txtValorTotal";
+            this.txtValorTotal.Size = new System.Drawing.Size(276, 23);
+            this.txtValorTotal.TabIndex = 50;
             // 
-            // btnDepositar
+            // txtCliente
             // 
-            this.btnDepositar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnDepositar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDepositar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnDepositar.FlatAppearance.BorderSize = 2;
-            this.btnDepositar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDepositar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDepositar.Location = new System.Drawing.Point(295, 189);
-            this.btnDepositar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDepositar.Name = "btnDepositar";
-            this.btnDepositar.Size = new System.Drawing.Size(89, 23);
-            this.btnDepositar.TabIndex = 39;
-            this.btnDepositar.Text = "Depositar";
-            this.btnDepositar.UseVisualStyleBackColor = false;
-            // 
-            // txtCSaldo
-            // 
-            this.txtCSaldo.Location = new System.Drawing.Point(151, 189);
-            this.txtCSaldo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCSaldo.Name = "txtCSaldo";
-            this.txtCSaldo.Size = new System.Drawing.Size(126, 23);
-            this.txtCSaldo.TabIndex = 38;
+            this.txtCliente.Location = new System.Drawing.Point(556, 270);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(350, 23);
+            this.txtCliente.TabIndex = 49;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label3.Location = new System.Drawing.Point(63, 192);
+            this.label3.Location = new System.Drawing.Point(556, 252);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 16);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Carregar Saldo:";
+            this.label3.Size = new System.Drawing.Size(42, 16);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "Cliente:";
             // 
-            // txtSaldo
+            // txtData
             // 
-            this.txtSaldo.Location = new System.Drawing.Point(151, 149);
-            this.txtSaldo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSaldo.Name = "txtSaldo";
-            this.txtSaldo.Size = new System.Drawing.Size(126, 23);
-            this.txtSaldo.TabIndex = 36;
+            this.txtData.Location = new System.Drawing.Point(556, 216);
+            this.txtData.Margin = new System.Windows.Forms.Padding(2);
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(350, 23);
+            this.txtData.TabIndex = 47;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label1.Location = new System.Drawing.Point(41, 227);
+            this.label1.Location = new System.Drawing.Point(556, 557);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 16);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Refeições Marcadas:";
+            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Valor Total:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label2.Location = new System.Drawing.Point(110, 152);
+            this.label2.Location = new System.Drawing.Point(556, 198);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 16);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Saldo:";
+            this.label2.Size = new System.Drawing.Size(32, 16);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Data:";
             // 
-            // dtgReserva
+            // dtgCMulta
             // 
-            this.dtgReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgReserva.Location = new System.Drawing.Point(423, 147);
-            this.dtgReserva.Margin = new System.Windows.Forms.Padding(2);
-            this.dtgReserva.Name = "dtgReserva";
-            this.dtgReserva.RowHeadersWidth = 51;
-            this.dtgReserva.RowTemplate.Height = 24;
-            this.dtgReserva.Size = new System.Drawing.Size(450, 345);
-            this.dtgReserva.TabIndex = 33;
+            this.dtgCMulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCMulta.Location = new System.Drawing.Point(12, 237);
+            this.dtgCMulta.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgCMulta.Name = "dtgCMulta";
+            this.dtgCMulta.RowHeadersWidth = 51;
+            this.dtgCMulta.RowTemplate.Height = 24;
+            this.dtgCMulta.Size = new System.Drawing.Size(525, 360);
+            this.dtgCMulta.TabIndex = 44;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::iCantina.Properties.Resources.Logo2;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 265);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(339, 227);
-            this.pictureBox1.TabIndex = 43;
-            this.pictureBox1.TabStop = false;
-            // 
-            // FormReserva
+            // FormMulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(917, 515);
+            this.ClientSize = new System.Drawing.Size(933, 609);
             this.Controls.Add(this.TSM);
+            this.Controls.Add(this.btnPagar);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtCliente);
+            this.Controls.Add(this.dtgMultas);
+            this.Controls.Add(this.mCalendar);
+            this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtRefeicoes);
-            this.Controls.Add(this.btnDepositar);
-            this.Controls.Add(this.txtCSaldo);
+            this.Controls.Add(this.txtValorTotal);
+            this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtSaldo);
+            this.Controls.Add(this.txtData);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dtgReserva);
+            this.Controls.Add(this.dtgCMulta);
             this.Font = new System.Drawing.Font("Arial", 10F);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FormReserva";
+            this.Name = "FormMulta";
             this.Padding = new System.Windows.Forms.Padding(10);
-            this.Text = "Gestão do Cliente";
+            this.Text = "Gestão de Multas";
             this.TSM.ResumeLayout(false);
             this.TSM.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgReserva)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgMultas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCMulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,19 +325,21 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
+        private System.Windows.Forms.Button btnPagar;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.DataGridView dtgMultas;
+        private System.Windows.Forms.MonthCalendar mCalendar;
+        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtRefeicoes;
-        private System.Windows.Forms.Button btnDepositar;
-        private System.Windows.Forms.TextBox txtCSaldo;
+        private System.Windows.Forms.TextBox txtValorTotal;
+        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSaldo;
+        private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dtgReserva;
+        private System.Windows.Forms.DataGridView dtgCMulta;
     }
 }
