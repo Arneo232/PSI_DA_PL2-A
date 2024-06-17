@@ -19,5 +19,16 @@ namespace iCantina.Modelo
             Peixe,
             Vegetariano
         }
+
+        public Prato()
+        {
+        }
+
+        public Prato(string descricao, TipoPrato tipo, bool ativo)
+        {
+            Descricao = descricao;
+            Tipo = tipo;
+            Ativo = ativo;
+        }
     }
 }
