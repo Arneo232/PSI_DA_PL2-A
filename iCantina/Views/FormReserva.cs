@@ -16,5 +16,35 @@ namespace iCantina.Views
         {
             InitializeComponent();
         }
+
+        private void TSM_GestaoP_Click(object sender, EventArgs e)
+        {
+            FormPrato FormP = new FormPrato();
+            FormP.Show();
+        }
+
+        private void TSM_GestaoM_Click(object sender, EventArgs e)
+        {
+            FormMenu FormMen = new FormMenu();
+            FormMen.Show();
+        }
+
+        private void TSM_GestaoF_Click(object sender, EventArgs e)
+        {
+            FormFatura FormF = new FormFatura();
+            FormF.Show();
+        }
+
+        private void TSM_GestaoMulta_Click(object sender, EventArgs e)
+        {
+            FormMulta FormM = new FormMulta();
+            FormM.Show();
+        }
+
+        private void TSM_Registo_Click(object sender, EventArgs e)
+        {
+            FormFuncionario FormFun = new FormFuncionario();
+            FormFun.Show();
+        }
     }
 }

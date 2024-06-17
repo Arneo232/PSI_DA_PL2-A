@@ -75,7 +75,7 @@
             this.dgvPratos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPratos.Location = new System.Drawing.Point(239, 80);
             this.dgvPratos.Name = "dgvPratos";
-            this.dgvPratos.Size = new System.Drawing.Size(420, 358);
+            this.dgvPratos.Size = new System.Drawing.Size(482, 358);
             this.dgvPratos.TabIndex = 2;
             // 
             // TSM
@@ -89,63 +89,71 @@
             this.TSM_GestaoF,
             this.TSM_GestaoMulta,
             this.TSM_Registo});
-            this.TSM.Location = new System.Drawing.Point(-1, 36);
+            this.TSM.Location = new System.Drawing.Point(9, 35);
             this.TSM.Name = "TSM";
-            this.TSM.Size = new System.Drawing.Size(673, 24);
+            this.TSM.Size = new System.Drawing.Size(713, 24);
             this.TSM.TabIndex = 62;
             this.TSM.Text = "TSM Tabs";
             // 
             // TSM_GestaoC
             // 
-            this.TSM_GestaoC.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoC.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_GestaoC.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TSM_GestaoC.Name = "TSM_GestaoC";
-            this.TSM_GestaoC.Size = new System.Drawing.Size(102, 20);
+            this.TSM_GestaoC.Size = new System.Drawing.Size(113, 20);
             this.TSM_GestaoC.Text = "Gestâo do Cliente";
             // 
             // TSM_GestaoP
             // 
-            this.TSM_GestaoP.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoP.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_GestaoP.Enabled = false;
+            this.TSM_GestaoP.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
             this.TSM_GestaoP.Name = "TSM_GestaoP";
-            this.TSM_GestaoP.Size = new System.Drawing.Size(105, 20);
+            this.TSM_GestaoP.Size = new System.Drawing.Size(116, 20);
             this.TSM_GestaoP.Text = "Gestão dos Pratos";
             // 
             // TSM_GestaoM
             // 
-            this.TSM_GestaoM.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoM.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_GestaoM.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
             this.TSM_GestaoM.Name = "TSM_GestaoM";
-            this.TSM_GestaoM.Size = new System.Drawing.Size(100, 20);
+            this.TSM_GestaoM.Size = new System.Drawing.Size(108, 20);
             this.TSM_GestaoM.Text = " Gestão do Menu";
             // 
             // TSM_GestaoF
             // 
-            this.TSM_GestaoF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoF.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_GestaoF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
             this.TSM_GestaoF.Name = "TSM_GestaoF";
-            this.TSM_GestaoF.Size = new System.Drawing.Size(106, 20);
+            this.TSM_GestaoF.Size = new System.Drawing.Size(115, 20);
             this.TSM_GestaoF.Text = "Gestão de Faturas";
             // 
             // TSM_GestaoMulta
             // 
-            this.TSM_GestaoMulta.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TSM_GestaoMulta.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_GestaoMulta.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
             this.TSM_GestaoMulta.Name = "TSM_GestaoMulta";
-            this.TSM_GestaoMulta.Size = new System.Drawing.Size(100, 20);
+            this.TSM_GestaoMulta.Size = new System.Drawing.Size(110, 20);
             this.TSM_GestaoMulta.Text = "Gestão de Multas";
             // 
             // TSM_Registo
             // 
+            this.TSM_Registo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_Registo.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
             this.TSM_Registo.Name = "TSM_Registo";
-            this.TSM_Registo.Size = new System.Drawing.Size(152, 20);
+            this.TSM_Registo.Size = new System.Drawing.Size(143, 20);
             this.TSM_Registo.Text = "Registo de Funcionário";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(234, 9);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(233, 4);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 26);
+            this.label5.Size = new System.Drawing.Size(256, 31);
             this.label5.TabIndex = 61;
-            this.label5.Text = "Gestão de Pratos";
+            this.label5.Text = "Gestão dos Pratos";
             // 
             // label2
             // 
@@ -242,7 +250,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(671, 450);
+            this.ClientSize = new System.Drawing.Size(733, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
@@ -258,7 +266,7 @@
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.label1);
             this.Name = "FormPrato";
-            this.Text = "FormPrato";
+            this.Text = "Gestão dos Pratos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPratos)).EndInit();
             this.TSM.ResumeLayout(false);
             this.TSM.PerformLayout();
