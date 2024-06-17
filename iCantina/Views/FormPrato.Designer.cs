@@ -143,9 +143,9 @@
             this.label5.Location = new System.Drawing.Point(234, 9);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 26);
+            this.label5.Size = new System.Drawing.Size(209, 26);
             this.label5.TabIndex = 61;
-            this.label5.Text = "Gestão de Pratos";
+            this.label5.Text = "Gestão dos Pratos";
             // 
             // label2
             // 
@@ -258,7 +258,7 @@
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.label1);
             this.Name = "FormPrato";
-            this.Text = "FormPrato";
+            this.Text = "Gestão dos Pratos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPratos)).EndInit();
             this.TSM.ResumeLayout(false);
             this.TSM.PerformLayout();
