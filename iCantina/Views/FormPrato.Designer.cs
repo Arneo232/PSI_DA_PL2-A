@@ -41,13 +41,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbTipoPrato = new System.Windows.Forms.ComboBox();
+            this.cbEstado = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cbEstado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPratos)).BeginInit();
             this.TSM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,7 +72,6 @@
             // 
             // dgvPratos
             // 
-            this.dgvPratos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPratos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPratos.Location = new System.Drawing.Point(239, 80);
             this.dgvPratos.Name = "dgvPratos";
@@ -166,15 +165,23 @@
             this.cbTipoPrato.Size = new System.Drawing.Size(122, 21);
             this.cbTipoPrato.TabIndex = 64;
             // 
+            // cbEstado
+            // 
+            this.cbEstado.FormattingEnabled = true;
+            this.cbEstado.Location = new System.Drawing.Point(99, 151);
+            this.cbEstado.Name = "cbEstado";
+            this.cbEstado.Size = new System.Drawing.Size(122, 21);
+            this.cbEstado.TabIndex = 66;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(53, 151);
+            this.label3.Location = new System.Drawing.Point(40, 152);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.Size = new System.Drawing.Size(53, 16);
             this.label3.TabIndex = 65;
-            this.label3.Text = "Ativo:";
+            this.label3.Text = "Estado:";
             // 
             // btnAdicionar
             // 
@@ -186,7 +193,6 @@
             this.btnAdicionar.TabIndex = 67;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = false;
-            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // btnGuardar
             // 
@@ -198,7 +204,6 @@
             this.btnGuardar.TabIndex = 68;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEditar
             // 
@@ -210,7 +215,6 @@
             this.btnEditar.TabIndex = 69;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnApagar
             // 
@@ -222,7 +226,6 @@
             this.btnApagar.TabIndex = 70;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
-            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // pictureBox1
             // 
@@ -234,27 +237,18 @@
             this.pictureBox1.TabIndex = 71;
             this.pictureBox1.TabStop = false;
             // 
-            // cbEstado
-            // 
-            this.cbEstado.AutoSize = true;
-            this.cbEstado.Location = new System.Drawing.Point(99, 153);
-            this.cbEstado.Name = "cbEstado";
-            this.cbEstado.Size = new System.Drawing.Size(15, 14);
-            this.cbEstado.TabIndex = 72;
-            this.cbEstado.UseVisualStyleBackColor = true;
-            // 
             // FormPrato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(671, 451);
-            this.Controls.Add(this.cbEstado);
+            this.ClientSize = new System.Drawing.Size(671, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnAdicionar);
+            this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbTipoPrato);
             this.Controls.Add(this.label2);
@@ -289,12 +283,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbTipoPrato;
+        private System.Windows.Forms.ComboBox cbEstado;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox cbEstado;
     }
 }
