@@ -138,6 +138,9 @@
     <EmbeddedResource Include="Views\FormMulta.resx">
       <DependentUpon>FormMulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormPrato.resx">
+      <DependentUpon>FormPrato.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormReserva.resx">
       <DependentUpon>FormReserva.cs</DependentUpon>
     </EmbeddedResource>
