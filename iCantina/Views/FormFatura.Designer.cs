@@ -50,6 +50,7 @@
             this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_Extras = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dtgFaturas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCFatura)).BeginInit();
             this.TSM.SuspendLayout();
@@ -211,6 +212,7 @@
             this.TSM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSM_GestaoC,
             this.TSM_GestaoP,
+            this.TSM_Extras,
             this.TSM_GestaoM,
             this.TSM_GestaoF,
             this.TSM_GestaoMulta,
@@ -218,7 +220,7 @@
             this.TSM.Location = new System.Drawing.Point(69, 40);
             this.TSM.Name = "TSM";
             this.TSM.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSM.Size = new System.Drawing.Size(833, 24);
+            this.TSM.Size = new System.Drawing.Size(948, 24);
             this.TSM.TabIndex = 59;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -275,6 +277,15 @@
             this.TSM_Registo.Size = new System.Drawing.Size(143, 20);
             this.TSM_Registo.Text = "Registo de Funcionário";
             this.TSM_Registo.Click += new System.EventHandler(this.TSM_Registo_Click);
+            // 
+            // TSM_Extras
+            // 
+            this.TSM_Extras.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_Extras.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TSM_Extras.Name = "TSM_Extras";
+            this.TSM_Extras.Size = new System.Drawing.Size(115, 20);
+            this.TSM_Extras.Text = "Gestao dos Extras";
+            this.TSM_Extras.Click += new System.EventHandler(this.TSM_Extras_Click);
             // 
             // FormFatura
             // 
@@ -335,5 +346,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
+        private System.Windows.Forms.ToolStripMenuItem TSM_Extras;
     }
 }

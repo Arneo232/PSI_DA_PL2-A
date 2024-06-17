@@ -34,3 +34,4 @@ C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.csproj.Up2Date
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.exe
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.pdb
+C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormExtra.resources

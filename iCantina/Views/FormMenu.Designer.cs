@@ -46,6 +46,7 @@
             this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_Extras = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dtgMenu)).BeginInit();
             this.TSM.SuspendLayout();
             this.SuspendLayout();
@@ -175,14 +176,14 @@
             this.dtgMenu.Name = "dtgMenu";
             this.dtgMenu.RowHeadersWidth = 51;
             this.dtgMenu.RowTemplate.Height = 24;
-            this.dtgMenu.Size = new System.Drawing.Size(409, 455);
+            this.dtgMenu.Size = new System.Drawing.Size(501, 455);
             this.dtgMenu.TabIndex = 33;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(267, 5);
+            this.label1.Location = new System.Drawing.Point(323, 5);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 31);
@@ -196,6 +197,7 @@
             this.TSM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSM_GestaoC,
             this.TSM_GestaoP,
+            this.TSM_Extras,
             this.TSM_GestaoM,
             this.TSM_GestaoF,
             this.TSM_GestaoMulta,
@@ -203,7 +205,7 @@
             this.TSM.Location = new System.Drawing.Point(20, 36);
             this.TSM.Name = "TSM";
             this.TSM.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSM.Size = new System.Drawing.Size(833, 24);
+            this.TSM.Size = new System.Drawing.Size(948, 24);
             this.TSM.TabIndex = 61;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -261,12 +263,21 @@
             this.TSM_Registo.Text = "Registo de Funcionário";
             this.TSM_Registo.Click += new System.EventHandler(this.TSM_Registo_Click);
             // 
+            // TSM_Extras
+            // 
+            this.TSM_Extras.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_Extras.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TSM_Extras.Name = "TSM_Extras";
+            this.TSM_Extras.Size = new System.Drawing.Size(115, 20);
+            this.TSM_Extras.Text = "Gestão dos Extras";
+            this.TSM_Extras.Click += new System.EventHandler(this.TSM_Extras_Click);
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(783, 554);
+            this.ClientSize = new System.Drawing.Size(868, 554);
             this.Controls.Add(this.TSM);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.mCalendar);
@@ -311,5 +322,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
+        private System.Windows.Forms.ToolStripMenuItem TSM_Extras;
     }
 }

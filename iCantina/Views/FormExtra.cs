@@ -1,6 +1,4 @@
-﻿using iCantina.Modelo;
-using iCantina.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,19 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
-namespace iCantina
+namespace iCantina.Views
 {
-    public partial class Form1 : Form
+    public partial class FormExtra : Form
     {
-        public Form1()
+        public FormExtra()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
         }
 
         private void TSM_GestaoC_Click(object sender, EventArgs e)
@@ -34,11 +27,6 @@ namespace iCantina
         {
             FormPrato FormP = new FormPrato();
             FormP.Show();
-        }
-        private void TSM_Extras_Click(object sender, EventArgs e)
-        {
-            FormExtra FormEx = new FormExtra();
-            FormEx.Show();
         }
 
         private void TSM_GestaoM_Click(object sender, EventArgs e)
@@ -64,6 +52,5 @@ namespace iCantina
             FormFuncionario FormFun = new FormFuncionario();
             FormFun.Show();
         }
-
     }
 }

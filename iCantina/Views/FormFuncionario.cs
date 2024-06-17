@@ -28,6 +28,11 @@ namespace iCantina.Views
             FormPrato FormP = new FormPrato();
             FormP.Show();
         }
+        private void TSM_Extras_Click(object sender, EventArgs e)
+        {
+            FormExtra FormEx = new FormExtra();
+            FormEx.Show();
+        }
 
         private void TSM_GestaoM_Click(object sender, EventArgs e)
         {
@@ -46,5 +51,6 @@ namespace iCantina.Views
             FormMulta FormM = new FormMulta();
             FormM.Show();
         }
+
     }
 }
