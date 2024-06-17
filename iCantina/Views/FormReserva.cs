@@ -25,8 +25,8 @@ namespace iCantina.Views
 
         private void TSM_GestaoM_Click(object sender, EventArgs e)
         {
-            FormMenu FormM = new FormMenu();
-            FormM.Show();
+            FormMenu FormMen = new FormMenu();
+            FormMen.Show();
         }
 
         private void TSM_GestaoF_Click(object sender, EventArgs e)
