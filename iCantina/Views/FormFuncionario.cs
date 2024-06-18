@@ -19,7 +19,6 @@ namespace iCantina.Views
         public FormFuncionario()
         {
             InitializeComponent();
-
             using (var db = new CantinaContext())
             {
                 dtgFuncionario.DataSource = db.Funcionarios.ToList();
@@ -90,6 +89,17 @@ namespace iCantina.Views
             btnGuardar.Enabled = false;
         }
 
+        private void OrganizeDataGridViewColumns()
+        {
+            if (dtgFuncionario.Columns.Count > 0)
+            {
+                dtgFuncionario.Columns["Id"].DisplayIndex = 0;
+                dtgFuncionario.Columns["Name"].DisplayIndex = 1;
+                dtgFuncionario.Columns["Nif"].DisplayIndex = 2;
+                dtgFuncionario.Columns["Username"].DisplayIndex = 3;
+            }
+        }
+
         private void btnAdicionarF_Click(object sender, EventArgs e)
         {
             string name = txtNome.Text;
@@ -108,6 +118,7 @@ namespace iCantina.Views
                 dtgFuncionario.DataSource = db.Funcionarios.ToList();
             }
             ClearEditingControls();
+            OrganizeDataGridViewColumns();
         }
 
         private void BtnApagarF_Click(object sender, EventArgs e)
@@ -129,6 +140,7 @@ namespace iCantina.Views
                         dtgFuncionario.DataSource = null;
                         dtgFuncionario.DataSource = db.Funcionarios.ToList();
                     }
+                    OrganizeDataGridViewColumns();
                 }
                 else
                 {
@@ -154,6 +166,7 @@ namespace iCantina.Views
                     txtUsername.Text = funcionarioEditar.Username;
 
                     EnableEditingControls();
+                    OrganizeDataGridViewColumns();
                 }
                 else
                 {
@@ -190,7 +203,13 @@ namespace iCantina.Views
                     dtgFuncionario.DataSource = db.Funcionarios.ToList();
                 }
                 ClearEditingControls();
+                OrganizeDataGridViewColumns();
             }
+        }
+
+        private void FormFuncionario_Load(object sender, EventArgs e)
+        {
+            OrganizeDataGridViewColumns();
         }
     }
 }

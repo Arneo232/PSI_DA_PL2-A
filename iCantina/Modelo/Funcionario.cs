@@ -8,7 +8,6 @@ namespace iCantina.Modelo
 {
     internal class Funcionario : Utilizador
     {
-        public int Id { get; set; }
         public string Username { get; set; }
 
         public Funcionario()

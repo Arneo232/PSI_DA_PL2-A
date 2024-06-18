@@ -329,6 +329,7 @@
             this.Name = "FormFuncionario";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "Registo de Funcinário";
+            this.Load += new System.EventHandler(this.FormFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgFuncionario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.TSM.ResumeLayout(false);
