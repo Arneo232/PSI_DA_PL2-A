@@ -285,7 +285,7 @@
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Location = new System.Drawing.Point(348, 90);
             this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.Size = new System.Drawing.Size(583, 282);
+            this.dgvClientes.Size = new System.Drawing.Size(583, 289);
             this.dgvClientes.TabIndex = 63;
             // 
             // btnGuardar
@@ -316,7 +316,7 @@
             this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnApagar.Location = new System.Drawing.Point(130, 347);
             this.btnApagar.Name = "btnApagar";
-            this.btnApagar.Size = new System.Drawing.Size(150, 25);
+            this.btnApagar.Size = new System.Drawing.Size(150, 29);
             this.btnApagar.TabIndex = 66;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
@@ -325,7 +325,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 386);
+            this.ClientSize = new System.Drawing.Size(943, 391);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);

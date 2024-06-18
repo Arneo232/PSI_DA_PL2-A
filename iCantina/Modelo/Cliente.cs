@@ -10,5 +10,18 @@ namespace iCantina.Modelo
     {
         public float Saldo { get; set; }   
         public List <Fatura> Faturas { get; set; }
+
+        public Cliente()
+        {
+            Faturas = new List<Fatura>();
+        }
+
+        public Cliente(string name, int nif, float saldo) : base(name, nif)
+        {
+            Name = name;
+            Nif = nif;
+            Saldo = saldo;
+            Faturas = new List<Fatura>();
+        }
     }
 }

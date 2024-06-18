@@ -48,7 +48,6 @@
             this.TSM_GestaoP = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Extras = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoM = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
             this.gestãoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -121,7 +120,7 @@
             // 
             // txtNFatura
             // 
-            this.txtNFatura.Location = new System.Drawing.Point(12, 134);
+            this.txtNFatura.Location = new System.Drawing.Point(12, 98);
             this.txtNFatura.Margin = new System.Windows.Forms.Padding(2);
             this.txtNFatura.Name = "txtNFatura";
             this.txtNFatura.Size = new System.Drawing.Size(231, 22);
@@ -131,7 +130,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label4.Location = new System.Drawing.Point(12, 116);
+            this.label4.Location = new System.Drawing.Point(12, 80);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 16);
@@ -148,7 +147,7 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(12, 240);
+            this.txtCliente.Location = new System.Drawing.Point(12, 204);
             this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(231, 22);
@@ -158,7 +157,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label3.Location = new System.Drawing.Point(12, 222);
+            this.label3.Location = new System.Drawing.Point(12, 186);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
@@ -167,7 +166,7 @@
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(12, 186);
+            this.txtData.Location = new System.Drawing.Point(12, 150);
             this.txtData.Margin = new System.Windows.Forms.Padding(2);
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(231, 22);
@@ -188,7 +187,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
-            this.label2.Location = new System.Drawing.Point(12, 168);
+            this.label2.Location = new System.Drawing.Point(12, 132);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 16);
@@ -215,14 +214,13 @@
             this.TSM_GestaoP,
             this.TSM_Extras,
             this.TSM_GestaoM,
-            this.TSM_GestaoF,
             this.TSM_GestaoMulta,
             this.TSM_Registo,
             this.gestãoDeReservasToolStripMenuItem});
             this.TSM.Location = new System.Drawing.Point(0, 41);
             this.TSM.Name = "TSM";
             this.TSM.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSM.Size = new System.Drawing.Size(1071, 24);
+            this.TSM.Size = new System.Drawing.Size(836, 24);
             this.TSM.TabIndex = 59;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -261,15 +259,6 @@
             this.TSM_GestaoM.Size = new System.Drawing.Size(108, 20);
             this.TSM_GestaoM.Text = " Gestão do Menu";
             this.TSM_GestaoM.Click += new System.EventHandler(this.TSM_GestaoM_Click);
-            // 
-            // TSM_GestaoF
-            // 
-            this.TSM_GestaoF.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TSM_GestaoF.Enabled = false;
-            this.TSM_GestaoF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
-            this.TSM_GestaoF.Name = "TSM_GestaoF";
-            this.TSM_GestaoF.Size = new System.Drawing.Size(115, 20);
-            this.TSM_GestaoF.Text = "Gestão de Faturas";
             // 
             // TSM_GestaoMulta
             // 
@@ -354,7 +343,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoC;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoP;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoM;
-        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
         private System.Windows.Forms.ToolStripMenuItem TSM_Extras;
