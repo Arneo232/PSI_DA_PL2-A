@@ -34,7 +34,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbTipoPrato = new System.Windows.Forms.ComboBox();
-            this.cbEstado = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -49,6 +48,7 @@
             this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
+            this.cbEstado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPratos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.TSM.SuspendLayout();
@@ -113,25 +113,16 @@
             this.cbTipoPrato.Size = new System.Drawing.Size(142, 24);
             this.cbTipoPrato.TabIndex = 64;
             // 
-            // cbEstado
-            // 
-            this.cbEstado.FormattingEnabled = true;
-            this.cbEstado.Location = new System.Drawing.Point(115, 186);
-            this.cbEstado.Margin = new System.Windows.Forms.Padding(4);
-            this.cbEstado.Name = "cbEstado";
-            this.cbEstado.Size = new System.Drawing.Size(142, 24);
-            this.cbEstado.TabIndex = 66;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(51, 189);
+            this.label3.Location = new System.Drawing.Point(51, 185);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 16);
+            this.label3.Size = new System.Drawing.Size(39, 16);
             this.label3.TabIndex = 65;
-            this.label3.Text = "Estado:";
+            this.label3.Text = "Ativo:";
             // 
             // btnAdicionar
             // 
@@ -144,6 +135,7 @@
             this.btnAdicionar.TabIndex = 67;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = false;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // btnGuardar
             // 
@@ -156,6 +148,7 @@
             this.btnGuardar.TabIndex = 68;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEditar
             // 
@@ -168,6 +161,7 @@
             this.btnEditar.TabIndex = 69;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnApagar
             // 
@@ -180,6 +174,7 @@
             this.btnApagar.TabIndex = 70;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // pictureBox1
             // 
@@ -207,7 +202,7 @@
             this.TSM.Location = new System.Drawing.Point(37, 55);
             this.TSM.Name = "TSM";
             this.TSM.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.TSM.Size = new System.Drawing.Size(829, 24);
+            this.TSM.Size = new System.Drawing.Size(949, 24);
             this.TSM.TabIndex = 77;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -218,6 +213,7 @@
             this.TSM_GestaoC.Name = "TSM_GestaoC";
             this.TSM_GestaoC.Size = new System.Drawing.Size(113, 20);
             this.TSM_GestaoC.Text = "Gestâo do Cliente";
+            this.TSM_GestaoC.Click += new System.EventHandler(this.TSM_GestaoC_Click);
             // 
             // TSM_GestaoP
             // 
@@ -235,6 +231,7 @@
             this.TSM_Extras.Name = "TSM_Extras";
             this.TSM_Extras.Size = new System.Drawing.Size(115, 20);
             this.TSM_Extras.Text = "Gestão dos Extras";
+            this.TSM_Extras.Click += new System.EventHandler(this.TSM_Extras_Click);
             // 
             // TSM_GestaoM
             // 
@@ -243,6 +240,7 @@
             this.TSM_GestaoM.Name = "TSM_GestaoM";
             this.TSM_GestaoM.Size = new System.Drawing.Size(108, 20);
             this.TSM_GestaoM.Text = " Gestão do Menu";
+            this.TSM_GestaoM.Click += new System.EventHandler(this.TSM_GestaoM_Click);
             // 
             // TSM_GestaoF
             // 
@@ -251,6 +249,7 @@
             this.TSM_GestaoF.Name = "TSM_GestaoF";
             this.TSM_GestaoF.Size = new System.Drawing.Size(115, 20);
             this.TSM_GestaoF.Text = "Gestão de Faturas";
+            this.TSM_GestaoF.Click += new System.EventHandler(this.TSM_GestaoF_Click);
             // 
             // TSM_GestaoMulta
             // 
@@ -259,6 +258,7 @@
             this.TSM_GestaoMulta.Name = "TSM_GestaoMulta";
             this.TSM_GestaoMulta.Size = new System.Drawing.Size(110, 20);
             this.TSM_GestaoMulta.Text = "Gestão de Multas";
+            this.TSM_GestaoMulta.Click += new System.EventHandler(this.TSM_GestaoMulta_Click);
             // 
             // TSM_Registo
             // 
@@ -267,6 +267,16 @@
             this.TSM_Registo.Name = "TSM_Registo";
             this.TSM_Registo.Size = new System.Drawing.Size(143, 20);
             this.TSM_Registo.Text = "Registo de Funcionário";
+            this.TSM_Registo.Click += new System.EventHandler(this.TSM_Registo_Click);
+            // 
+            // cbEstado
+            // 
+            this.cbEstado.AutoSize = true;
+            this.cbEstado.Location = new System.Drawing.Point(115, 187);
+            this.cbEstado.Name = "cbEstado";
+            this.cbEstado.Size = new System.Drawing.Size(15, 14);
+            this.cbEstado.TabIndex = 78;
+            this.cbEstado.UseVisualStyleBackColor = true;
             // 
             // FormPrato
             // 
@@ -274,13 +284,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(891, 554);
+            this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.TSM);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnAdicionar);
-            this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbTipoPrato);
             this.Controls.Add(this.label2);
@@ -310,7 +320,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbTipoPrato;
-        private System.Windows.Forms.ComboBox cbEstado;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnGuardar;
@@ -325,5 +334,7 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
+        //private System.Windows.Forms.CheckBox cbEstado;
+        private System.Windows.Forms.CheckBox cbEstado;
     }
 }
