@@ -21,6 +21,7 @@ namespace iCantina.Views
         {
             public string Text { get; set; }
             public Prato.TipoPrato Tipo { get; set; }
+
             public override string ToString()
             {
                 return Text;
@@ -72,7 +73,7 @@ namespace iCantina.Views
             txtDescricao.Text = "";
             cbTipoPrato.Text = null;
             cbEstado.Checked = false;
-
+            btnAdicionar.Enabled = true;
             btnGuardar.Enabled = false;
         }
 
@@ -163,12 +164,13 @@ namespace iCantina.Views
             {
                 pratoEditar.Descricao = txtDescricao.Text;
                 var sTipo = cbTipoPrato.SelectedItem;
-
+                
                 if (!(sTipo is ComboBoxTipoPratoItem tipo))
                 {
                     return;
                 }
 
+                pratoEditar.Tipo = tipo.Tipo;
                 pratoEditar.Ativo = cbEstado.Checked;
 
                 using (var db = new CantinaContext())
@@ -190,30 +192,35 @@ namespace iCantina.Views
         {
             FormReserva FormR = new FormReserva();
             FormR.Show();
+            this.Close();
         }
 
         private void TSM_Extras_Click(object sender, EventArgs e)
         {
             FormExtra FormEx = new FormExtra();
             FormEx.Show();
+            this.Close();
         }
 
         private void TSM_GestaoM_Click(object sender, EventArgs e)
         {
             FormMenu FormMen = new FormMenu();
             FormMen.Show();
+            this.Close();
         }
 
         private void TSM_GestaoF_Click(object sender, EventArgs e)
         {
             FormFatura FormF = new FormFatura();
             FormF.Show();
+            this.Close();
         }
 
         private void TSM_GestaoMulta_Click(object sender, EventArgs e)
         {
             FormMulta FormM = new FormMulta();
             FormM.Show();
+            this.Close();
         }
 
         private void TSM_Registo_Click(object sender, EventArgs e)

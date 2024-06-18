@@ -75,6 +75,7 @@
             // 
             // dgvPratos
             // 
+            this.dgvPratos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPratos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPratos.Location = new System.Drawing.Point(279, 98);
             this.dgvPratos.Margin = new System.Windows.Forms.Padding(4);
@@ -202,7 +203,7 @@
             this.TSM.Location = new System.Drawing.Point(37, 55);
             this.TSM.Name = "TSM";
             this.TSM.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.TSM.Size = new System.Drawing.Size(949, 24);
+            this.TSM.Size = new System.Drawing.Size(829, 24);
             this.TSM.TabIndex = 77;
             this.TSM.Text = "TSM Tabs";
             // 
