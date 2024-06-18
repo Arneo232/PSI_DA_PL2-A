@@ -11,5 +11,15 @@ namespace iCantina.Modelo
         public int Id { get; set; }
         public string Name { get; set; }
         public int Nif { get; set; }
+
+        public Utilizador() 
+        { 
+        }
+
+        public Utilizador(string name, int nif)
+        {
+            Name = name;
+            Nif = nif;
+        }
     }
 }

@@ -46,11 +46,12 @@
             this.TSM = new System.Windows.Forms.MenuStrip();
             this.TSM_GestaoC = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoP = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSM_Extras = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoM = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSM_Extras = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestãoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dtgFaturas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCFatura)).BeginInit();
             this.TSM.SuspendLayout();
@@ -74,7 +75,7 @@
             this.btnPesquisar.FlatAppearance.BorderSize = 2;
             this.btnPesquisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnPesquisar.Location = new System.Drawing.Point(588, 195);
+            this.btnPesquisar.Location = new System.Drawing.Point(609, 195);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisar.TabIndex = 57;
@@ -83,7 +84,7 @@
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(396, 195);
+            this.txtPesquisa.Location = new System.Drawing.Point(417, 195);
             this.txtPesquisa.Margin = new System.Windows.Forms.Padding(2);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(187, 22);
@@ -94,7 +95,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(339, 9);
+            this.label5.Location = new System.Drawing.Point(350, 10);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(256, 31);
@@ -114,7 +115,7 @@
             // 
             // mCalendar
             // 
-            this.mCalendar.Location = new System.Drawing.Point(694, 68);
+            this.mCalendar.Location = new System.Drawing.Point(715, 68);
             this.mCalendar.Name = "mCalendar";
             this.mCalendar.TabIndex = 53;
             // 
@@ -197,7 +198,7 @@
             // dtgCFatura
             // 
             this.dtgCFatura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgCFatura.Location = new System.Drawing.Point(396, 234);
+            this.dtgCFatura.Location = new System.Drawing.Point(417, 234);
             this.dtgCFatura.Margin = new System.Windows.Forms.Padding(2);
             this.dtgCFatura.Name = "dtgCFatura";
             this.dtgCFatura.RowHeadersWidth = 51;
@@ -216,11 +217,12 @@
             this.TSM_GestaoM,
             this.TSM_GestaoF,
             this.TSM_GestaoMulta,
-            this.TSM_Registo});
-            this.TSM.Location = new System.Drawing.Point(69, 40);
+            this.TSM_Registo,
+            this.gestãoDeReservasToolStripMenuItem});
+            this.TSM.Location = new System.Drawing.Point(0, 41);
             this.TSM.Name = "TSM";
             this.TSM.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSM.Size = new System.Drawing.Size(948, 24);
+            this.TSM.Size = new System.Drawing.Size(1071, 24);
             this.TSM.TabIndex = 59;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -241,6 +243,15 @@
             this.TSM_GestaoP.Size = new System.Drawing.Size(116, 20);
             this.TSM_GestaoP.Text = "Gestão dos Pratos";
             this.TSM_GestaoP.Click += new System.EventHandler(this.TSM_GestaoP_Click);
+            // 
+            // TSM_Extras
+            // 
+            this.TSM_Extras.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TSM_Extras.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
+            this.TSM_Extras.Name = "TSM_Extras";
+            this.TSM_Extras.Size = new System.Drawing.Size(115, 20);
+            this.TSM_Extras.Text = "Gestao dos Extras";
+            this.TSM_Extras.Click += new System.EventHandler(this.TSM_Extras_Click);
             // 
             // TSM_GestaoM
             // 
@@ -278,21 +289,21 @@
             this.TSM_Registo.Text = "Registo de Funcionário";
             this.TSM_Registo.Click += new System.EventHandler(this.TSM_Registo_Click);
             // 
-            // TSM_Extras
+            // gestãoDeReservasToolStripMenuItem
             // 
-            this.TSM_Extras.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TSM_Extras.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
-            this.TSM_Extras.Name = "TSM_Extras";
-            this.TSM_Extras.Size = new System.Drawing.Size(115, 20);
-            this.TSM_Extras.Text = "Gestao dos Extras";
-            this.TSM_Extras.Click += new System.EventHandler(this.TSM_Extras_Click);
+            this.gestãoDeReservasToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.gestãoDeReservasToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gestãoDeReservasToolStripMenuItem.Name = "gestãoDeReservasToolStripMenuItem";
+            this.gestãoDeReservasToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.gestãoDeReservasToolStripMenuItem.Text = "Gestão de Reservas";
+            this.gestãoDeReservasToolStripMenuItem.Click += new System.EventHandler(this.gestãoDeReservasToolStripMenuItem_Click);
             // 
             // FormFatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(933, 596);
+            this.ClientSize = new System.Drawing.Size(954, 596);
             this.Controls.Add(this.TSM);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnPesquisar);
@@ -347,5 +358,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
         private System.Windows.Forms.ToolStripMenuItem TSM_Extras;
+        private System.Windows.Forms.ToolStripMenuItem gestãoDeReservasToolStripMenuItem;
     }
 }

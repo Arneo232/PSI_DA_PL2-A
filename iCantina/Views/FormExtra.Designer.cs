@@ -49,6 +49,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.cbEstado = new System.Windows.Forms.CheckBox();
+            this.gestãoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.TSM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExtras)).BeginInit();
@@ -150,11 +151,12 @@
             this.TSM_GestaoM,
             this.TSM_GestaoF,
             this.TSM_GestaoMulta,
-            this.TSM_Registo});
-            this.TSM.Location = new System.Drawing.Point(79, 46);
+            this.TSM_Registo,
+            this.gestãoDeReservasToolStripMenuItem});
+            this.TSM.Location = new System.Drawing.Point(1, 43);
             this.TSM.Name = "TSM";
             this.TSM.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.TSM.Size = new System.Drawing.Size(829, 24);
+            this.TSM.Size = new System.Drawing.Size(1072, 24);
             this.TSM.TabIndex = 76;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -225,7 +227,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(355, 15);
+            this.label5.Location = new System.Drawing.Point(277, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(254, 31);
@@ -236,10 +238,10 @@
             // 
             this.dgvExtras.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvExtras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExtras.Location = new System.Drawing.Point(318, 98);
+            this.dgvExtras.Location = new System.Drawing.Point(322, 98);
             this.dgvExtras.Margin = new System.Windows.Forms.Padding(4);
             this.dgvExtras.Name = "dgvExtras";
-            this.dgvExtras.Size = new System.Drawing.Size(606, 466);
+            this.dgvExtras.Size = new System.Drawing.Size(631, 466);
             this.dgvExtras.TabIndex = 74;
             // 
             // txtDescricao
@@ -278,12 +280,21 @@
             this.cbEstado.TabIndex = 87;
             this.cbEstado.UseVisualStyleBackColor = true;
             // 
+            // gestãoDeReservasToolStripMenuItem
+            // 
+            this.gestãoDeReservasToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.gestãoDeReservasToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gestãoDeReservasToolStripMenuItem.Name = "gestãoDeReservasToolStripMenuItem";
+            this.gestãoDeReservasToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.gestãoDeReservasToolStripMenuItem.Text = "Gestão de Reservas";
+            this.gestãoDeReservasToolStripMenuItem.Click += new System.EventHandler(this.gestãoDeReservasToolStripMenuItem_Click);
+            // 
             // FormExtra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(940, 580);
+            this.ClientSize = new System.Drawing.Size(959, 580);
             this.Controls.Add(this.cbEstado);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.pictureBox1);
@@ -335,5 +346,6 @@
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.ToolStripMenuItem gestãoDosExtrasToolStripMenuItem;
         private System.Windows.Forms.CheckBox cbEstado;
+        private System.Windows.Forms.ToolStripMenuItem gestãoDeReservasToolStripMenuItem;
     }
 }

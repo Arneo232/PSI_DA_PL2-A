@@ -59,5 +59,11 @@ namespace iCantina.Views
             this.Close();
         }
 
+        private void TSM_GestaoC_Click(object sender, EventArgs e)
+        {
+            FormCliente FormC = new FormCliente();
+            FormC.Show();
+            this.Close();
+        }
     }
 }

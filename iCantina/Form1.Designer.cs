@@ -38,6 +38,7 @@
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM = new System.Windows.Forms.MenuStrip();
             this.TSM_Extras = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestãoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.TSM.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(324, 10);
+            this.label1.Location = new System.Drawing.Point(364, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(239, 32);
             this.label1.TabIndex = 3;
@@ -59,7 +60,7 @@
             this.pictureBox1.BackgroundImage = global::iCantina.Properties.Resources.Logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 89);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 89);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(852, 359);
             this.pictureBox1.TabIndex = 5;
@@ -130,11 +131,12 @@
             this.TSM_GestaoM,
             this.TSM_GestaoF,
             this.TSM_GestaoMulta,
-            this.TSM_Registo});
-            this.TSM.Location = new System.Drawing.Point(40, 62);
+            this.TSM_Registo,
+            this.gestãoDeReservasToolStripMenuItem});
+            this.TSM.Location = new System.Drawing.Point(-1, 62);
             this.TSM.Name = "TSM";
             this.TSM.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSM.Size = new System.Drawing.Size(948, 24);
+            this.TSM.Size = new System.Drawing.Size(1071, 24);
             this.TSM.TabIndex = 4;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -147,12 +149,21 @@
             this.TSM_Extras.Text = "Gestão dos Extras";
             this.TSM_Extras.Click += new System.EventHandler(this.TSM_Extras_Click);
             // 
+            // gestãoDeReservasToolStripMenuItem
+            // 
+            this.gestãoDeReservasToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.gestãoDeReservasToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gestãoDeReservasToolStripMenuItem.Name = "gestãoDeReservasToolStripMenuItem";
+            this.gestãoDeReservasToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.gestãoDeReservasToolStripMenuItem.Text = "Gestão de Reservas";
+            this.gestãoDeReservasToolStripMenuItem.Click += new System.EventHandler(this.gestãoDeReservasToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(913, 467);
+            this.ClientSize = new System.Drawing.Size(953, 467);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TSM);
@@ -182,6 +193,7 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
         private System.Windows.Forms.MenuStrip TSM;
         private System.Windows.Forms.ToolStripMenuItem TSM_Extras;
+        private System.Windows.Forms.ToolStripMenuItem gestãoDeReservasToolStripMenuItem;
     }
 }
 

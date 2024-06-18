@@ -42,3 +42,4 @@ C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.cspr
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.csproj.Up2Date
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.exe
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.pdb
+C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormCliente.resources

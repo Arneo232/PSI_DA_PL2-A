@@ -26,8 +26,8 @@ namespace iCantina
 
         private void TSM_GestaoC_Click(object sender, EventArgs e)
         {
-            FormReserva FormR = new FormReserva();
-            FormR.Show();
+            FormCliente FormC = new FormCliente();
+            FormC.Show();
         }
 
         private void TSM_GestaoP_Click(object sender, EventArgs e)
@@ -65,5 +65,10 @@ namespace iCantina
             FormFun.Show();
         }
 
+        private void gestãoDeReservasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormReserva FormR = new FormReserva();
+            FormR.Show();
+        }
     }
 }

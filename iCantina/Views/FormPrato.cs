@@ -190,8 +190,8 @@ namespace iCantina.Views
 
         private void TSM_GestaoC_Click(object sender, EventArgs e)
         {
-            FormReserva FormR = new FormReserva();
-            FormR.Show();
+            FormCliente FormC = new FormCliente();
+            FormC.Show();
             this.Close();
         }
 
@@ -227,6 +227,14 @@ namespace iCantina.Views
         {
             FormFuncionario FormFun = new FormFuncionario();
             FormFun.Show();
+            this.Close();
+        }
+
+        private void gestãoDeReservasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormReserva FormR = new FormReserva();
+            FormR.Show();
+            this.Close();
         }
     }
 }
