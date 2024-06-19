@@ -80,9 +80,9 @@
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label5.Location = new System.Drawing.Point(348, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(262, 32);
+            this.label5.Size = new System.Drawing.Size(260, 32);
             this.label5.TabIndex = 44;
-            this.label5.Text = "Gestão do Reserva";
+            this.label5.Text = "Gestão da Reserva";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // dtgCliente
