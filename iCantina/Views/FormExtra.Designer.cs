@@ -40,16 +40,15 @@
             this.TSM_GestaoP = new System.Windows.Forms.ToolStripMenuItem();
             this.gestãoDosExtrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoM = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestãoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvExtras = new System.Windows.Forms.DataGridView();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.cbEstado = new System.Windows.Forms.CheckBox();
-            this.gestãoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.TSM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExtras)).BeginInit();
@@ -69,7 +68,7 @@
             // btnApagar
             // 
             this.btnApagar.BackColor = System.Drawing.Color.Red;
-            this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApagar.Location = new System.Drawing.Point(130, 282);
             this.btnApagar.Margin = new System.Windows.Forms.Padding(4);
             this.btnApagar.Name = "btnApagar";
@@ -82,7 +81,7 @@
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.Yellow;
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(209, 248);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
@@ -95,7 +94,7 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.Cyan;
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Location = new System.Drawing.Point(130, 248);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
@@ -108,7 +107,7 @@
             // btnAdicionar
             // 
             this.btnAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdicionar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdicionar.Location = new System.Drawing.Point(130, 213);
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionar.Name = "btnAdicionar";
@@ -149,14 +148,13 @@
             this.TSM_GestaoP,
             this.gestãoDosExtrasToolStripMenuItem,
             this.TSM_GestaoM,
-            this.TSM_GestaoF,
             this.TSM_GestaoMulta,
             this.TSM_Registo,
             this.gestãoDeReservasToolStripMenuItem});
-            this.TSM.Location = new System.Drawing.Point(1, 43);
+            this.TSM.Location = new System.Drawing.Point(38, 44);
             this.TSM.Name = "TSM";
             this.TSM.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.TSM.Size = new System.Drawing.Size(1072, 24);
+            this.TSM.Size = new System.Drawing.Size(837, 24);
             this.TSM.TabIndex = 76;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -196,15 +194,6 @@
             this.TSM_GestaoM.Text = " Gestão do Menu";
             this.TSM_GestaoM.Click += new System.EventHandler(this.TSM_GestaoM_Click);
             // 
-            // TSM_GestaoF
-            // 
-            this.TSM_GestaoF.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TSM_GestaoF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
-            this.TSM_GestaoF.Name = "TSM_GestaoF";
-            this.TSM_GestaoF.Size = new System.Drawing.Size(115, 20);
-            this.TSM_GestaoF.Text = "Gestão de Faturas";
-            this.TSM_GestaoF.Click += new System.EventHandler(this.TSM_GestaoF_Click);
-            // 
             // TSM_GestaoMulta
             // 
             this.TSM_GestaoMulta.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -223,14 +212,23 @@
             this.TSM_Registo.Text = "Registo de Funcionário";
             this.TSM_Registo.Click += new System.EventHandler(this.TSM_Registo_Click);
             // 
+            // gestãoDeReservasToolStripMenuItem
+            // 
+            this.gestãoDeReservasToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.gestãoDeReservasToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gestãoDeReservasToolStripMenuItem.Name = "gestãoDeReservasToolStripMenuItem";
+            this.gestãoDeReservasToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.gestãoDeReservasToolStripMenuItem.Text = "Gestão de Reservas";
+            this.gestãoDeReservasToolStripMenuItem.Click += new System.EventHandler(this.gestãoDeReservasToolStripMenuItem_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(277, 12);
+            this.label5.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(351, 12);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(254, 31);
+            this.label5.Size = new System.Drawing.Size(254, 32);
             this.label5.TabIndex = 75;
             this.label5.Text = "Gestão dos Extras";
             // 
@@ -280,15 +278,6 @@
             this.cbEstado.TabIndex = 87;
             this.cbEstado.UseVisualStyleBackColor = true;
             // 
-            // gestãoDeReservasToolStripMenuItem
-            // 
-            this.gestãoDeReservasToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.gestãoDeReservasToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
-            this.gestãoDeReservasToolStripMenuItem.Name = "gestãoDeReservasToolStripMenuItem";
-            this.gestãoDeReservasToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
-            this.gestãoDeReservasToolStripMenuItem.Text = "Gestão de Reservas";
-            this.gestãoDeReservasToolStripMenuItem.Click += new System.EventHandler(this.gestãoDeReservasToolStripMenuItem_Click);
-            // 
             // FormExtra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -336,7 +325,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoC;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoP;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoM;
-        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
         private System.Windows.Forms.Label label5;

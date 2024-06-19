@@ -49,7 +49,6 @@
             this.TSM_GestaoP = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Extras = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoM = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
             this.gestãoDeReservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,6 +64,7 @@
             this.btnPagar.FlatAppearance.BorderSize = 2;
             this.btnPagar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnPagar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnPagar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagar.Location = new System.Drawing.Point(866, 569);
             this.btnPagar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPagar.Name = "btnPagar";
@@ -76,11 +76,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(586, 299);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 16);
+            this.label6.Size = new System.Drawing.Size(50, 16);
             this.label6.TabIndex = 58;
             this.label6.Text = "Multas:";
             // 
@@ -110,11 +110,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(347, 10);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(242, 31);
+            this.label5.Size = new System.Drawing.Size(239, 32);
             this.label5.TabIndex = 55;
             this.label5.Text = "Gestão de Multas";
             // 
@@ -147,11 +147,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(586, 144);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 16);
+            this.label4.Size = new System.Drawing.Size(69, 16);
             this.label4.TabIndex = 51;
             this.label4.Text = "Descrição:";
             // 
@@ -174,11 +174,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(586, 250);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 16);
+            this.label3.Size = new System.Drawing.Size(51, 16);
             this.label3.TabIndex = 48;
             this.label3.Text = "Cliente:";
             // 
@@ -193,22 +193,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(586, 555);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.Size = new System.Drawing.Size(71, 16);
             this.label1.TabIndex = 46;
             this.label1.Text = "Valor Total:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(586, 196);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 16);
+            this.label2.Size = new System.Drawing.Size(38, 16);
             this.label2.TabIndex = 45;
             this.label2.Text = "Data:";
             // 
@@ -232,14 +232,13 @@
             this.TSM_GestaoP,
             this.TSM_Extras,
             this.TSM_GestaoM,
-            this.TSM_GestaoF,
             this.TSM_GestaoMulta,
             this.TSM_Registo,
             this.gestãoDeReservasToolStripMenuItem});
-            this.TSM.Location = new System.Drawing.Point(-1, 41);
+            this.TSM.Location = new System.Drawing.Point(59, 41);
             this.TSM.Name = "TSM";
             this.TSM.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSM.Size = new System.Drawing.Size(951, 24);
+            this.TSM.Size = new System.Drawing.Size(836, 24);
             this.TSM.TabIndex = 60;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -278,15 +277,6 @@
             this.TSM_GestaoM.Size = new System.Drawing.Size(108, 20);
             this.TSM_GestaoM.Text = " Gestão do Menu";
             this.TSM_GestaoM.Click += new System.EventHandler(this.TSM_GestaoM_Click);
-            // 
-            // TSM_GestaoF
-            // 
-            this.TSM_GestaoF.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TSM_GestaoF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
-            this.TSM_GestaoF.Name = "TSM_GestaoF";
-            this.TSM_GestaoF.Size = new System.Drawing.Size(115, 20);
-            this.TSM_GestaoF.Text = "Gestão de Faturas";
-            this.TSM_GestaoF.Click += new System.EventHandler(this.TSM_GestaoF_Click);
             // 
             // TSM_GestaoMulta
             // 
@@ -373,7 +363,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoC;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoP;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoM;
-        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
         private System.Windows.Forms.ToolStripMenuItem TSM_Extras;

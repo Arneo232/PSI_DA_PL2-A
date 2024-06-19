@@ -33,7 +33,6 @@
             this.TSM_GestaoC = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoP = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoM = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSM_GestaoF = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM = new System.Windows.Forms.MenuStrip();
@@ -93,15 +92,6 @@
             this.TSM_GestaoM.Text = " Gestão do Menu";
             this.TSM_GestaoM.Click += new System.EventHandler(this.TSM_GestaoM_Click);
             // 
-            // TSM_GestaoF
-            // 
-            this.TSM_GestaoF.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TSM_GestaoF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
-            this.TSM_GestaoF.Name = "TSM_GestaoF";
-            this.TSM_GestaoF.Size = new System.Drawing.Size(115, 20);
-            this.TSM_GestaoF.Text = "Gestão de Faturas";
-            this.TSM_GestaoF.Click += new System.EventHandler(this.TSM_GestaoF_Click);
-            // 
             // TSM_GestaoMulta
             // 
             this.TSM_GestaoMulta.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -129,14 +119,13 @@
             this.TSM_GestaoP,
             this.TSM_Extras,
             this.TSM_GestaoM,
-            this.TSM_GestaoF,
             this.TSM_GestaoMulta,
             this.TSM_Registo,
             this.gestãoDeReservasToolStripMenuItem});
-            this.TSM.Location = new System.Drawing.Point(-1, 62);
+            this.TSM.Location = new System.Drawing.Point(50, 62);
             this.TSM.Name = "TSM";
             this.TSM.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSM.Size = new System.Drawing.Size(1071, 24);
+            this.TSM.Size = new System.Drawing.Size(836, 24);
             this.TSM.TabIndex = 4;
             this.TSM.Text = "TSM Tabs";
             // 
@@ -188,7 +177,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoC;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoP;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoM;
-        private System.Windows.Forms.ToolStripMenuItem TSM_GestaoF;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoMulta;
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
         private System.Windows.Forms.MenuStrip TSM;

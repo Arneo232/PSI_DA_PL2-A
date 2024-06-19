@@ -89,12 +89,6 @@
     <Compile Include="Views\FormExtra.Designer.cs">
       <DependentUpon>FormExtra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormFatura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FormFatura.Designer.cs">
-      <DependentUpon>FormFatura.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\FormFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,9 +137,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormExtra.resx">
       <DependentUpon>FormExtra.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormFatura.resx">
-      <DependentUpon>FormFatura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormFuncionario.resx">
       <DependentUpon>FormFuncionario.cs</DependentUpon>
