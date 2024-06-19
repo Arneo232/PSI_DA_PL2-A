@@ -30,7 +30,6 @@ C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.cspr
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Form1.resources
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Properties.Resources.resources
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormExtra.resources
-C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormFatura.resources
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormFuncionario.resources
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormMenu.resources
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormMulta.resources

@@ -11,5 +11,15 @@ namespace iCantina.Modelo
         public int Id { get; set; }
         public float Valor { get; set; }
         public float NumHoras { get; set; }
+
+        public Multa()
+        {
+        }
+
+        public Multa(float valor, float numHoras)
+        {
+            Valor = valor;
+            NumHoras = numHoras;
+        }
     }
 }

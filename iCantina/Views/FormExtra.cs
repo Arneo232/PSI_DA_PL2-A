@@ -101,6 +101,7 @@ namespace iCantina.Views
                 dgvExtras.DataSource = null;
                 dgvExtras.DataSource = db.Extras.ToList();
             }
+            ClearEditingControls();
         }
 
         private void btnApagar_Click(object sender, EventArgs e)

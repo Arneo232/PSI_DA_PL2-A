@@ -98,6 +98,7 @@ namespace iCantina.Views
                 dgvPratos.DataSource = null;
                 dgvPratos.DataSource = db.Pratos.ToList();
             }
+            ClearEditingControls();
         }
 
         private void btnApagar_Click(object sender, EventArgs e)

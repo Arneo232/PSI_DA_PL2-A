@@ -21,6 +21,10 @@ namespace iCantina.Views
         public FormCliente()
         {
             InitializeComponent();
+            using (var db = new CantinaContext())
+            {
+                dgvClientes.DataSource = db.Clientes.ToList();
+            }
         }
 
         private void TSM_GestaoReserva_Click(object sender, EventArgs e)
@@ -64,6 +68,7 @@ namespace iCantina.Views
             FormP.Show();
             this.Close();
         }
+
         private void EnableEditingControls()
         {
             btnAddProf.Enabled = false;
@@ -74,10 +79,10 @@ namespace iCantina.Views
 
         private void ClearEditingControls()
         {
-            txtEmail.Text = "";
             txtNome.Text = "";
             txtNif.Text = "";
             txtSaldo.Text = "";
+            txtEmail.Text = "";
             txtNumEstudante.Text = "";
             btnAddProf.Enabled = true;
             btnAddAluno.Enabled = true;

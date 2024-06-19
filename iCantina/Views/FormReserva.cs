@@ -15,6 +15,11 @@ namespace iCantina.Views
         public FormReserva()
         {
             InitializeComponent();
+            using (var db = new CantinaContext())
+            {
+                dtgCliente.DataSource = db.Clientes.ToList();
+                dvgReserva.DataSource = db.Reservas.ToList();
+            }
         }
 
         private void TSM_GestaoP_Click(object sender, EventArgs e)

@@ -31,16 +31,7 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtRefeicoes = new System.Windows.Forms.TextBox();
-            this.btnDepositar = new System.Windows.Forms.Button();
-            this.txtCSaldo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtSaldo = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dtgReserva = new System.Windows.Forms.DataGridView();
+            this.dtgCliente = new System.Windows.Forms.DataGridView();
             this.TSM = new System.Windows.Forms.MenuStrip();
             this.TSM_GestaoC = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoP = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,10 +40,15 @@
             this.TSM_GestaoMulta = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_Registo = new System.Windows.Forms.ToolStripMenuItem();
             this.TSM_GestaoReserva = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgReserva)).BeginInit();
+            this.dvgReserva = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).BeginInit();
             this.TSM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgReserva)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPesquisar
@@ -62,21 +58,20 @@
             this.btnPesquisar.FlatAppearance.BorderSize = 2;
             this.btnPesquisar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.btnPesquisar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnPesquisar.Location = new System.Drawing.Point(765, 94);
+            this.btnPesquisar.Location = new System.Drawing.Point(204, 94);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.Size = new System.Drawing.Size(113, 23);
             this.btnPesquisar.TabIndex = 46;
-            this.btnPesquisar.Text = "Buscar";
+            this.btnPesquisar.Text = "Buscar Cliente";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(573, 94);
+            this.txtPesquisa.Location = new System.Drawing.Point(12, 94);
             this.txtPesquisa.Margin = new System.Windows.Forms.Padding(2);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(187, 23);
             this.txtPesquisa.TabIndex = 45;
-            this.txtPesquisa.Text = "Pesquisa";
             // 
             // label5
             // 
@@ -90,108 +85,17 @@
             this.label5.Text = "Gestão do Reserva";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtCliente
+            // dtgCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(134, 86);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(126, 23);
-            this.txtCliente.TabIndex = 42;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(83, 89);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 16);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Cliente:";
-            // 
-            // txtRefeicoes
-            // 
-            this.txtRefeicoes.Location = new System.Drawing.Point(134, 199);
-            this.txtRefeicoes.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRefeicoes.Name = "txtRefeicoes";
-            this.txtRefeicoes.Size = new System.Drawing.Size(126, 23);
-            this.txtRefeicoes.TabIndex = 40;
-            // 
-            // btnDepositar
-            // 
-            this.btnDepositar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnDepositar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDepositar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnDepositar.FlatAppearance.BorderSize = 2;
-            this.btnDepositar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDepositar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDepositar.Location = new System.Drawing.Point(278, 164);
-            this.btnDepositar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDepositar.Name = "btnDepositar";
-            this.btnDepositar.Size = new System.Drawing.Size(89, 23);
-            this.btnDepositar.TabIndex = 39;
-            this.btnDepositar.Text = "Depositar";
-            this.btnDepositar.UseVisualStyleBackColor = false;
-            // 
-            // txtCSaldo
-            // 
-            this.txtCSaldo.Location = new System.Drawing.Point(134, 164);
-            this.txtCSaldo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCSaldo.Name = "txtCSaldo";
-            this.txtCSaldo.Size = new System.Drawing.Size(126, 23);
-            this.txtCSaldo.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 167);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 16);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Carregar Saldo:";
-            // 
-            // txtSaldo
-            // 
-            this.txtSaldo.Location = new System.Drawing.Point(134, 124);
-            this.txtSaldo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSaldo.Name = "txtSaldo";
-            this.txtSaldo.Size = new System.Drawing.Size(126, 23);
-            this.txtSaldo.TabIndex = 36;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1, 202);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 16);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Refeições Marcadas:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(93, 127);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Saldo:";
-            // 
-            // dtgReserva
-            // 
-            this.dtgReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgReserva.Location = new System.Drawing.Point(573, 127);
-            this.dtgReserva.Margin = new System.Windows.Forms.Padding(2);
-            this.dtgReserva.Name = "dtgReserva";
-            this.dtgReserva.RowHeadersWidth = 51;
-            this.dtgReserva.RowTemplate.Height = 24;
-            this.dtgReserva.Size = new System.Drawing.Size(370, 345);
-            this.dtgReserva.TabIndex = 33;
+            this.dtgCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCliente.Location = new System.Drawing.Point(12, 127);
+            this.dtgCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.dtgCliente.Name = "dtgCliente";
+            this.dtgCliente.RowHeadersWidth = 51;
+            this.dtgCliente.RowTemplate.Height = 24;
+            this.dtgCliente.Size = new System.Drawing.Size(370, 376);
+            this.dtgCliente.TabIndex = 33;
             // 
             // TSM
             // 
@@ -275,15 +179,75 @@
             this.TSM_GestaoReserva.Size = new System.Drawing.Size(123, 20);
             this.TSM_GestaoReserva.Text = "Gestão de Reservas";
             // 
-            // pictureBox1
+            // dvgReserva
             // 
-            this.pictureBox1.BackgroundImage = global::iCantina.Properties.Resources.Logo2;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 240);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(339, 227);
-            this.pictureBox1.TabIndex = 43;
-            this.pictureBox1.TabStop = false;
+            this.dvgReserva.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dvgReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgReserva.Location = new System.Drawing.Point(573, 127);
+            this.dvgReserva.Margin = new System.Windows.Forms.Padding(2);
+            this.dvgReserva.Name = "dvgReserva";
+            this.dvgReserva.RowHeadersWidth = 51;
+            this.dvgReserva.RowTemplate.Height = 24;
+            this.dvgReserva.Size = new System.Drawing.Size(370, 376);
+            this.dvgReserva.TabIndex = 48;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.No;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(421, 173);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 31);
+            this.button1.TabIndex = 49;
+            this.button1.Text = "Reservar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(386, 145);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(183, 23);
+            this.textBox1.TabIndex = 50;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(387, 127);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 16);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Insira o nif do cliente";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(712, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 16);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "Tabela de Menus";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.No;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(421, 210);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 31);
+            this.button2.TabIndex = 53;
+            this.button2.Text = "Emitir Fatura";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // FormReserva
             // 
@@ -291,30 +255,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(955, 515);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dvgReserva);
             this.Controls.Add(this.TSM);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtCliente);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtRefeicoes);
-            this.Controls.Add(this.btnDepositar);
-            this.Controls.Add(this.txtCSaldo);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtSaldo);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dtgReserva);
+            this.Controls.Add(this.dtgCliente);
             this.Font = new System.Drawing.Font("Arial", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormReserva";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "Gestão do Cliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgReserva)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).EndInit();
             this.TSM.ResumeLayout(false);
             this.TSM.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgReserva)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,17 +284,7 @@
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisa;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtRefeicoes;
-        private System.Windows.Forms.Button btnDepositar;
-        private System.Windows.Forms.TextBox txtCSaldo;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSaldo;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dtgReserva;
+        private System.Windows.Forms.DataGridView dtgCliente;
         private System.Windows.Forms.MenuStrip TSM;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoC;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoP;
@@ -343,5 +293,11 @@
         private System.Windows.Forms.ToolStripMenuItem TSM_Registo;
         private System.Windows.Forms.ToolStripMenuItem TSM_Extras;
         private System.Windows.Forms.ToolStripMenuItem TSM_GestaoReserva;
+        private System.Windows.Forms.DataGridView dvgReserva;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
     }
 }

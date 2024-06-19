@@ -15,5 +15,19 @@ namespace iCantina.Modelo
         public Prato Prato { get; set; }
         public Extra Extra { get; set; }
         public Menu Menu { get; set; }
+
+        public Reserva()
+        {
+        }
+
+        public Reserva(DateTime dataReserva, Cliente cliente, Multa multa, Prato prato, Extra extra, Menu menu)
+        {
+            DataReserva = dataReserva;
+            Cliente = cliente;
+            Multa = multa;
+            Prato = prato;
+            Extra = extra;
+            Menu = menu;
+        }
     }
 }
