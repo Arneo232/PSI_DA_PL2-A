@@ -14,12 +14,12 @@ namespace iCantina.Modelo
         {
         }
 
-        public Professor(string email, string name, int nif, float saldo) : base(name, nif, saldo)
+        public Professor(string name, int nif, float saldo, string email) : base(name, nif, saldo)
         {
-            Email = email;
             Name = name;
             Nif = nif;
             Saldo = saldo;
+            Email = email;
         }
     }
 }

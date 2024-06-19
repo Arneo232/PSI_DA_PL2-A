@@ -96,7 +96,6 @@ namespace iCantina.Views
             dt.Columns.Add("NumEstudante");
             dt.Columns.Add("Tipo");
 
-
             using (var db = new CantinaContext())
             {
                 var estudantes = db.Estudantes.ToList();
@@ -128,14 +127,13 @@ namespace iCantina.Views
                 return;
             }
 
-      
             if (!float.TryParse(sSaldo, out float saldo))
             {
                 MessageBox.Show("Saldo inválido. Por favor, insira um número válido.");
                 return;
             }
 
-            Professor professor = new Professor(email, nome, nif, saldo);
+            Professor professor = new Professor(nome, nif, saldo, email);
 
             try
             {
@@ -144,12 +142,13 @@ namespace iCantina.Views
                     db.Professores.Add(professor);
                     db.SaveChanges();
 
+                    // Atualizar DataGridView apenas com os dados de professores
                     dgvClientes.DataSource = null;
                     dgvClientes.DataSource = db.Professores.ToList();
                 }
 
                 ClearEditingControls();
-                OrganizeDataGridViewColumns();
+                OrganizeDataGridViewColumns(); // Garantir que a ordem das colunas seja respeitada
             }
             catch (Exception ex)
             {
@@ -182,7 +181,7 @@ namespace iCantina.Views
                 return;
             }
 
-            Estudante aluno = new Estudante(numEstudante, nome, nif, saldo);
+            Estudante aluno = new Estudante(nome, nif, saldo, numEstudante);
 
             try
             {
@@ -191,13 +190,13 @@ namespace iCantina.Views
                     db.Estudantes.Add(aluno);
                     db.SaveChanges();
 
-
+                    // Atualizar DataGridView apenas com os dados de estudantes
                     dgvClientes.DataSource = null;
                     dgvClientes.DataSource = db.Estudantes.ToList();
                 }
 
                 ClearEditingControls();
-                OrganizeDataGridViewColumns();
+                OrganizeDataGridViewColumns(); // Garantir que a ordem das colunas seja respeitada
             }
             catch (Exception ex)
             {
@@ -262,15 +261,15 @@ namespace iCantina.Views
             if (dgvClientes.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dgvClientes.SelectedRows[0];
-                tipoClienteSelecionado = selectedRow.Cells["Tipo"].Value.ToString();
+                string tipo = selectedRow.Cells["Tipo"].Value.ToString();
 
-                using (var db = new CantinaContext())
+                if (tipo == "Estudante")
                 {
-                    if (tipoClienteSelecionado == "Estudante")
+                    if (int.TryParse(selectedRow.Cells["NumEstudante"].Value.ToString(), out int numEstudante))
                     {
-                        if (int.TryParse(selectedRow.Cells["NumEstudante"].Value.ToString(), out int numEstudante))
+                        using (var db = new CantinaContext())
                         {
-                            var estudanteFromDB = db.Estudantes.SingleOrDefault(est => est.NumEstudante == numEstudante);
+                            var estudanteFromDB = db.Estudantes.FirstOrDefault(est => est.NumEstudante == numEstudante);
                             if (estudanteFromDB != null)
                             {
                                 txtNome.Text = estudanteFromDB.Name;
@@ -280,9 +279,13 @@ namespace iCantina.Views
                             }
                         }
                     }
-                    else if (tipoClienteSelecionado == "Professor")
+                }
+                else if (tipo == "Professor")
+                {
+                    string email = selectedRow.Cells["Email"].Value.ToString();
+                    using (var db = new CantinaContext())
                     {
-                        var professorFromDB = db.Professores.SingleOrDefault(prof => prof.Email == selectedRow.Cells["Email"].Value.ToString());
+                        var professorFromDB = db.Professores.FirstOrDefault(prof => prof.Email == email);
                         if (professorFromDB != null)
                         {
                             txtNome.Text = professorFromDB.Name;
@@ -292,10 +295,11 @@ namespace iCantina.Views
                             txtSaldo.Text = professorFromDB.Saldo.ToString();
                         }
                     }
-
-                    EnableEditingControls();
-                    OrganizeDataGridViewColumns();
                 }
+
+                tipoClienteSelecionado = tipo;
+                EnableEditingControls();
+                OrganizeDataGridViewColumns();
             }
             else
             {
@@ -313,36 +317,58 @@ namespace iCantina.Views
                     {
                         if (int.TryParse(txtNumEstudante.Text, out int numEstudante))
                         {
-                            var estudanteFromDB = db.Estudantes.SingleOrDefault(est => est.NumEstudante == numEstudante);
+                            var estudanteFromDB = db.Estudantes.FirstOrDefault(est => est.NumEstudante == numEstudante);
                             if (estudanteFromDB != null)
                             {
                                 estudanteFromDB.Name = txtNome.Text;
                                 estudanteFromDB.Nif = int.Parse(txtNif.Text);
                                 estudanteFromDB.Saldo = float.Parse(txtSaldo.Text);
                             }
+                            else
+                            {
+                                var novoEstudante = new Estudante
+                                {
+                                    Name = txtNome.Text,
+                                    NumEstudante = numEstudante,
+                                    Nif = int.Parse(txtNif.Text),
+                                    Saldo = float.Parse(txtSaldo.Text)
+                                };
+                                db.Estudantes.Add(novoEstudante);
+                            }
                         }
                     }
                     else if (tipoClienteSelecionado == "Professor")
                     {
-                        var professorFromDB = db.Professores.SingleOrDefault(prof => prof.Email == txtEmail.Text);
+                        var professorFromDB = db.Professores.FirstOrDefault(prof => prof.Email == txtEmail.Text);
                         if (professorFromDB != null)
                         {
                             professorFromDB.Name = txtNome.Text;
                             professorFromDB.Nif = int.Parse(txtNif.Text);
                             professorFromDB.Saldo = float.Parse(txtSaldo.Text);
                         }
+                        else
+                        {
+                            var novoProfessor = new Professor
+                            {
+                                Name = txtNome.Text,
+                                Email = txtEmail.Text,
+                                Nif = int.Parse(txtNif.Text),
+                                Saldo = float.Parse(txtSaldo.Text)
+                            };
+                            db.Professores.Add(novoProfessor);
+                        }
                     }
 
                     db.SaveChanges();
-                    OrganizeDataGridViewColumns();
                 }
 
                 ClearEditingControls();
                 OrganizeDataGridViewColumns();
+                tipoClienteSelecionado = string.Empty;
             }
             else
             {
-                MessageBox.Show("Por favor, selecione um cliente para salvar as alterações.");
+                MessageBox.Show("Por favor, preencha os dados e selecione um tipo de cliente para salvar.");
             }
         }
     }

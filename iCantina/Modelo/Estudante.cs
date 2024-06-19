@@ -15,12 +15,12 @@ namespace iCantina.Modelo
         {
         }
 
-        public Estudante(int numEstudante, string name, int nif, float saldo) : base(name, nif, saldo)
+        public Estudante(string name, int nif, float saldo, int numEstudante) : base(name, nif, saldo)
         {
-            NumEstudante = numEstudante;
             Name = name;
             Nif = nif;
             Saldo = saldo;
+            NumEstudante = numEstudante;
         }
     }
 }
