@@ -47,12 +47,6 @@ namespace iCantina
             FormMen.Show();
         }
 
-        private void TSM_GestaoF_Click(object sender, EventArgs e)
-        {
-            FormFatura FormF = new FormFatura();
-            FormF.Show();
-        }
-
         private void TSM_GestaoMulta_Click(object sender, EventArgs e)
         {
             FormMulta FormM = new FormMulta();

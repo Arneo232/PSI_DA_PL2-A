@@ -53,13 +53,6 @@ namespace iCantina.Views
             this.Close();
         }
 
-        private void TSM_GestaoF_Click(object sender, EventArgs e)
-        {
-            FormFatura FormF = new FormFatura();
-            FormF.Show();
-            this.Close();
-        }
-
         private void TSM_GestaoMulta_Click(object sender, EventArgs e)
         {
             FormMulta FormM = new FormMulta();

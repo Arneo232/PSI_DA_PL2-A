@@ -259,6 +259,7 @@
             this.btnAddAluno.TabIndex = 62;
             this.btnAddAluno.Text = "Adicionar Aluno";
             this.btnAddAluno.UseVisualStyleBackColor = false;
+            this.btnAddAluno.Click += new System.EventHandler(this.btnAddAluno_Click);
             // 
             // dgvClientes
             // 
@@ -281,6 +282,7 @@
             this.btnGuardar.TabIndex = 64;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEditar
             // 
@@ -293,6 +295,7 @@
             this.btnEditar.TabIndex = 65;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnApagar
             // 
@@ -305,6 +308,7 @@
             this.btnApagar.TabIndex = 66;
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // btnAddProf
             // 
@@ -317,6 +321,7 @@
             this.btnAddProf.TabIndex = 67;
             this.btnAddProf.Text = "Adicionar Professor";
             this.btnAddProf.UseVisualStyleBackColor = false;
+            this.btnAddProf.Click += new System.EventHandler(this.btnAddProf_Click);
             // 
             // FormCliente
             // 
@@ -345,6 +350,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormCliente";
             this.Text = "FormCliente";
+            this.Load += new System.EventHandler(this.FormCliente_Load);
             this.TSM.ResumeLayout(false);
             this.TSM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();

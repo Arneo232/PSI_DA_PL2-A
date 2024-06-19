@@ -9,7 +9,6 @@ C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Form1.resources
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Properties.Resources.resources
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormExtra.resources
-C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormFatura.resources
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormFuncionario.resources
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormMenu.resources
 C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormMulta.resources
@@ -43,3 +42,4 @@ C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.cspr
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.exe
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.pdb
 C:\Users\Utilizador\Desktop\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormCliente.resources
+C:\Users\Arneo Santos\Documents\0Documentos\Trabalhos IPL\DA\ProjetoDA\ProjetoDA\iCantina\obj\Debug\iCantina.Views.FormCliente.resources
