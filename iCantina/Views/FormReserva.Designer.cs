@@ -270,7 +270,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormReserva";
             this.Padding = new System.Windows.Forms.Padding(10);
-            this.Text = "Gestão do Cliente";
+            this.Text = "Gestão da Reserva";
             ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).EndInit();
             this.TSM.ResumeLayout(false);
             this.TSM.PerformLayout();
