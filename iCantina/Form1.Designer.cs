@@ -71,7 +71,7 @@
             this.TSM_GestaoC.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold);
             this.TSM_GestaoC.Name = "TSM_GestaoC";
             this.TSM_GestaoC.Size = new System.Drawing.Size(113, 20);
-            this.TSM_GestaoC.Text = "Gestâo do Cliente";
+            this.TSM_GestaoC.Text = "Gestão do Cliente";
             this.TSM_GestaoC.Click += new System.EventHandler(this.TSM_GestaoC_Click);
             // 
             // TSM_GestaoP
@@ -125,7 +125,7 @@
             this.TSM.Location = new System.Drawing.Point(50, 62);
             this.TSM.Name = "TSM";
             this.TSM.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.TSM.Size = new System.Drawing.Size(836, 24);
+            this.TSM.Size = new System.Drawing.Size(956, 24);
             this.TSM.TabIndex = 4;
             this.TSM.Text = "TSM Tabs";
             // 

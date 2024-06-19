@@ -317,7 +317,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormFuncionario";
             this.Padding = new System.Windows.Forms.Padding(10);
-            this.Text = "Registo de Funcinário";
+            this.Text = "Gestão de Funcionário";
             this.Load += new System.EventHandler(this.FormFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgFuncionario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

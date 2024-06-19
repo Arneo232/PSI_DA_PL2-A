@@ -167,7 +167,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(130, 114);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(174, 22);
             this.txtNome.TabIndex = 51;
@@ -175,7 +175,7 @@
             // txtNif
             // 
             this.txtNif.Location = new System.Drawing.Point(129, 154);
-            this.txtNif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNif.Margin = new System.Windows.Forms.Padding(4);
             this.txtNif.Name = "txtNif";
             this.txtNif.Size = new System.Drawing.Size(174, 22);
             this.txtNif.TabIndex = 53;
@@ -194,7 +194,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(129, 234);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(174, 22);
             this.txtEmail.TabIndex = 57;
@@ -213,7 +213,7 @@
             // txtSaldo
             // 
             this.txtSaldo.Location = new System.Drawing.Point(129, 197);
-            this.txtSaldo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSaldo.Margin = new System.Windows.Forms.Padding(4);
             this.txtSaldo.Name = "txtSaldo";
             this.txtSaldo.Size = new System.Drawing.Size(174, 22);
             this.txtSaldo.TabIndex = 59;
@@ -232,7 +232,7 @@
             // txtNumEstudante
             // 
             this.txtNumEstudante.Location = new System.Drawing.Point(129, 272);
-            this.txtNumEstudante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumEstudante.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumEstudante.Name = "txtNumEstudante";
             this.txtNumEstudante.Size = new System.Drawing.Size(174, 22);
             this.txtNumEstudante.TabIndex = 61;
@@ -253,7 +253,7 @@
             this.btnAddAluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAddAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnAddAluno.Location = new System.Drawing.Point(129, 363);
-            this.btnAddAluno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddAluno.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddAluno.Name = "btnAddAluno";
             this.btnAddAluno.Size = new System.Drawing.Size(175, 32);
             this.btnAddAluno.TabIndex = 62;
@@ -266,7 +266,7 @@
             this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Location = new System.Drawing.Point(341, 111);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.Size = new System.Drawing.Size(779, 356);
             this.dgvClientes.TabIndex = 63;
@@ -276,7 +276,7 @@
             this.btnGuardar.BackColor = System.Drawing.Color.Aqua;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.Location = new System.Drawing.Point(129, 395);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(84, 32);
             this.btnGuardar.TabIndex = 64;
@@ -289,7 +289,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.Yellow;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnEditar.Location = new System.Drawing.Point(220, 395);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(84, 32);
             this.btnEditar.TabIndex = 65;
@@ -302,7 +302,7 @@
             this.btnApagar.BackColor = System.Drawing.Color.Red;
             this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnApagar.Location = new System.Drawing.Point(129, 427);
-            this.btnApagar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnApagar.Margin = new System.Windows.Forms.Padding(4);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(175, 36);
             this.btnApagar.TabIndex = 66;
@@ -315,7 +315,7 @@
             this.btnAddProf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAddProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnAddProf.Location = new System.Drawing.Point(129, 335);
-            this.btnAddProf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddProf.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddProf.Name = "btnAddProf";
             this.btnAddProf.Size = new System.Drawing.Size(175, 32);
             this.btnAddProf.TabIndex = 67;
@@ -347,9 +347,9 @@
             this.Controls.Add(this.TSM);
             this.Controls.Add(this.label5);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormCliente";
-            this.Text = "FormCliente";
+            this.Text = "Gestão do Cliente";
             this.Load += new System.EventHandler(this.FormCliente_Load);
             this.TSM.ResumeLayout(false);
             this.TSM.PerformLayout();
