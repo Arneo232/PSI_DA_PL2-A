@@ -21,6 +21,7 @@ namespace iCantina.Views
         public FormCliente()
         {
             InitializeComponent();
+            InitializeDataGridView();
             using (var db = new CantinaContext())
             {
                 dgvClientes.DataSource = db.Clientes.ToList();
@@ -90,6 +91,20 @@ namespace iCantina.Views
             btnGuardar.Enabled = false;
         }
 
+        private void InitializeDataGridView()
+        {
+            // Isto configura manualmente as colunas
+            dgvClientes.AutoGenerateColumns = false;
+            dgvClientes.Columns.Clear();
+
+            dgvClientes.Columns.Add(new DataGridViewTextBoxColumn { Name = "Id", HeaderText = "Id", DataPropertyName = "Id" });
+            dgvClientes.Columns.Add(new DataGridViewTextBoxColumn { Name = "Nome", HeaderText = "Nome", DataPropertyName = "Nome" });
+            dgvClientes.Columns.Add(new DataGridViewTextBoxColumn { Name = "Nif", HeaderText = "Nif", DataPropertyName = "Nif" });
+            dgvClientes.Columns.Add(new DataGridViewTextBoxColumn { Name = "Saldo", HeaderText = "Saldo", DataPropertyName = "Saldo" });
+            dgvClientes.Columns.Add(new DataGridViewTextBoxColumn { Name = "Email", HeaderText = "Email", DataPropertyName = "Email" });
+            dgvClientes.Columns.Add(new DataGridViewTextBoxColumn { Name = "NumEstudante", HeaderText = "NumEstudante", DataPropertyName = "NumEstudante" });
+            dgvClientes.Columns.Add(new DataGridViewTextBoxColumn { Name = "Tipo", HeaderText = "Tipo", DataPropertyName = "Tipo" });
+        }
         private void OrganizeDataGridViewColumns()
         {
             DataTable dt = new DataTable();
@@ -146,10 +161,6 @@ namespace iCantina.Views
                 {
                     db.Professores.Add(professor);
                     db.SaveChanges();
-
-                    // Atualizar DataGridView apenas com os dados de professores
-                    dgvClientes.DataSource = null;
-                    dgvClientes.DataSource = db.Professores.ToList();
                 }
 
                 ClearEditingControls();
@@ -194,10 +205,6 @@ namespace iCantina.Views
                 {
                     db.Estudantes.Add(aluno);
                     db.SaveChanges();
-
-                    // Atualizar DataGridView apenas com os dados de estudantes
-                    dgvClientes.DataSource = null;
-                    dgvClientes.DataSource = db.Estudantes.ToList();
                 }
 
                 ClearEditingControls();
@@ -213,6 +220,7 @@ namespace iCantina.Views
         {
             OrganizeDataGridViewColumns();
         }
+
 
         private void btnApagar_Click(object sender, EventArgs e)
         {

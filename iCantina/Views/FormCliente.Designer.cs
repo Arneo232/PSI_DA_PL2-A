@@ -53,6 +53,13 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnAddProf = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nif = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Saldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumEstudante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TSM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
@@ -265,6 +272,14 @@
             // 
             this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Nome,
+            this.Nif,
+            this.Saldo,
+            this.Email,
+            this.NumEstudante,
+            this.Tipo});
             this.dgvClientes.Location = new System.Drawing.Point(341, 111);
             this.dgvClientes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvClientes.Name = "dgvClientes";
@@ -322,6 +337,41 @@
             this.btnAddProf.Text = "Adicionar Professor";
             this.btnAddProf.UseVisualStyleBackColor = false;
             this.btnAddProf.Click += new System.EventHandler(this.btnAddProf_Click);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
+            // Nif
+            // 
+            this.Nif.HeaderText = "Nif";
+            this.Nif.Name = "Nif";
+            // 
+            // Saldo
+            // 
+            this.Saldo.HeaderText = "Saldo";
+            this.Saldo.Name = "Saldo";
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            // 
+            // NumEstudante
+            // 
+            this.NumEstudante.HeaderText = "NumEstudante";
+            this.NumEstudante.Name = "NumEstudante";
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
             // 
             // FormCliente
             // 
@@ -386,5 +436,12 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.Button btnAddProf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nif;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Saldo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumEstudante;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
     }
 }
